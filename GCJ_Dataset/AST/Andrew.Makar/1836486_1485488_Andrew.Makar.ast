@@ -1,0 +1,891 @@
+Dumping __resolved:
+[0;1;32mParmVarDecl[0m[0;33m 0x52814b0[0m <[0;33m/usr/include/stdlib.h:798:10[0m, [0;33mcol:27[0m> [0;33mcol:27[0m[0;1;36m __resolved[0m [0;32m'char *__restrict'[0m
+
+Dumping solve:
+[0;1;32mFunctionDecl[0m[0;33m 0x60c1d18[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang_GJam/data/Andrew.Makar/1836486_1485488_Andrew.Makar.cpp:69:1[0m, [0;33mline:169:1[0m> [0;33mline:69:6[0m used[0;1;36m solve[0m [0;32m'void ()'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60cbda0[0m <[0;33mcol:13[0m, [0;33mline:169:1[0m>
+[0;34m  |-[0m[0;1;35mCallExpr[0m[0;33m 0x60c1f60[0m <[0;33mline:72:2[0m, [0;33mcol:25[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c1f48[0m <[0;33mcol:2[0m> [0;32m'int (*)(const char *__restrict, ...)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c1ec8[0m <[0;33mcol:2[0m> [0;32m'int (const char *__restrict, ...)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x52b1d70[0m[0;1;36m 'scanf'[0m [0;32m'int (const char *__restrict, ...)'[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c1fa0[0m <[0;33mcol:8[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x60c1e00[0m <[0;33mcol:8[0m> [0;32m'const char [7]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "%d%d%d"[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c1e40[0m <[0;33mcol:17[0m, [0;33mcol:18[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m prefix '&' cannot overflow
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c1e20[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fba0[0m[0;1;36m 'H'[0m [0;32m'int'[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c1e78[0m <[0;33mcol:20[0m, [0;33mcol:21[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m prefix '&' cannot overflow
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c1e58[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  | `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c1eb0[0m <[0;33mcol:23[0m, [0;33mcol:24[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m prefix '&' cannot overflow
+[0;34m  |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c1e90[0m <[0;33mcol:24[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |-[0m[0;1;35mForStmt[0m[0;33m 0x60c2520[0m <[0;33mline:73:2[0m, [0;33mline:77:2[0m>
+[0;34m  | |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c2058[0m <[0;33mline:73:7[0m, [0;33mcol:14[0m>
+[0;34m  | | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c1fd0[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;33mcol:11[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c2038[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c20e0[0m <[0;33mcol:16[0m, [0;33mcol:18[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c20b0[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2070[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1fd0[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c20c8[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2090[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c2120[0m <[0;33mcol:21[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2100[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1fd0[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c2508[0m <[0;33mcol:25[0m, [0;33mline:77:2[0m>
+[0;34m  |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60c24d0[0m <[0;33mline:74:3[0m, [0;33mline:76:3[0m>
+[0;34m  |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c21d8[0m <[0;33mline:74:8[0m, [0;33mcol:15[0m>
+[0;34m  |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c2150[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m j[0m [0;32m'int'[0m cinit
+[0;34m  |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c21b8[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c2260[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2230[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c21f0[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2150[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2248[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2210[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c22a0[0m <[0;33mcol:22[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2280[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2150[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c24b8[0m <[0;33mcol:26[0m, [0;33mline:76:3[0m>
+[0;34m  |       `-[0m[0;1;35mCallExpr[0m[0;33m 0x60c2470[0m <[0;33mline:75:4[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m  |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2458[0m <[0;33mcol:4[0m> [0;32m'int (*)(const char *__restrict, ...)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2438[0m <[0;33mcol:4[0m> [0;32m'int (const char *__restrict, ...)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x52b1d70[0m[0;1;36m 'scanf'[0m [0;32m'int (const char *__restrict, ...)'[0m
+[0;34m  |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c24a0[0m <[0;33mcol:10[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |         | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x60c2300[0m <[0;33mcol:10[0m> [0;32m'const char [3]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "%d"[0m
+[0;34m  |         `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c2420[0m <[0;33mcol:15[0m, [0;33mcol:22[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m prefix '&' cannot overflow
+[0;34m  |           `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c2400[0m <[0;33mcol:16[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |             |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c23d0[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |             | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c2390[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'int [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |             |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2360[0m <[0;33mcol:16[0m> [0;32m'int (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |             |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2320[0m <[0;33mcol:16[0m> [0;32m'int [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6f900[0m[0;1;36m 'c'[0m [0;32m'int [200][200]'[0m
+[0;34m  |             |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2378[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |             |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2340[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1fd0[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |             `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c23e8[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |               `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c23b0[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2150[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |-[0m[0;1;35mForStmt[0m[0;33m 0x60c2cd8[0m <[0;33mline:79:2[0m, [0;33mline:84:2[0m>
+[0;34m  | |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c25f8[0m <[0;33mline:79:7[0m, [0;33mcol:14[0m>
+[0;34m  | | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c2570[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;33mcol:11[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c25d8[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c2680[0m <[0;33mcol:16[0m, [0;33mcol:18[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2650[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2610[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2570[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2668[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2630[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c26c0[0m <[0;33mcol:21[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c26a0[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2570[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c2cc0[0m <[0;33mcol:25[0m, [0;33mline:84:2[0m>
+[0;34m  |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60c2c88[0m <[0;33mline:80:3[0m, [0;33mline:83:3[0m>
+[0;34m  |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c2778[0m <[0;33mline:80:8[0m, [0;33mcol:15[0m>
+[0;34m  |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c26f0[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m j[0m [0;32m'int'[0m cinit
+[0;34m  |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c2758[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c2800[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c27d0[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2790[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c26f0[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c27e8[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c27b0[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c2840[0m <[0;33mcol:22[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2820[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c26f0[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c2c68[0m <[0;33mcol:26[0m, [0;33mline:83:3[0m>
+[0;34m  |       |-[0m[0;1;35mCallExpr[0m[0;33m 0x60c2a10[0m <[0;33mline:81:4[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m  |       | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c29f8[0m <[0;33mcol:4[0m> [0;32m'int (*)(const char *__restrict, ...)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |       | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c29d8[0m <[0;33mcol:4[0m> [0;32m'int (const char *__restrict, ...)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x52b1d70[0m[0;1;36m 'scanf'[0m [0;32m'int (const char *__restrict, ...)'[0m
+[0;34m  |       | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2a40[0m <[0;33mcol:10[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x60c28a0[0m <[0;33mcol:10[0m> [0;32m'const char [3]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "%d"[0m
+[0;34m  |       | `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c29c0[0m <[0;33mcol:15[0m, [0;33mcol:22[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m prefix '&' cannot overflow
+[0;34m  |       |   `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c29a0[0m <[0;33mcol:16[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2970[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |     | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c2930[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'int [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |     |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2900[0m <[0;33mcol:16[0m> [0;32m'int (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |     |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c28c0[0m <[0;33mcol:16[0m> [0;32m'int [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fa20[0m[0;1;36m 'h'[0m [0;32m'int [200][200]'[0m
+[0;34m  |       |     |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2918[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c28e0[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2570[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |       |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2988[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |       `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2950[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c26f0[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |       `-[0m[0;1;35mCXXMemberCallExpr[0m[0;33m 0x60c2c48[0m <[0;33mline:82:4[0m, [0;33mcol:18[0m> [0;32m'void'[0m[0;36m[0m[0;36m[0m
+[0;34m  |         `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c2c18[0m <[0;33mcol:4[0m, [0;33mcol:12[0m> [0;32m'<bound member function type>'[0m[0;36m[0m[0;36m[0m .clear[0;33m 0x5f88e78[0m
+[0;34m  |           `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c2bf8[0m <[0;33mcol:4[0m, [0;33mcol:10[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |             |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2bc8[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |             | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c2b28[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |             |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2af8[0m <[0;33mcol:4[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |             |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2a58[0m <[0;33mcol:4[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |             |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2b10[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |             |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2a78[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2570[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |             `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2be0[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |               `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2b48[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c26f0[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |-[0m[0;1;35mForStmt[0m[0;33m 0x60c8278[0m <[0;33mline:86:2[0m, [0;33mline:95:2[0m>
+[0;34m  | |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c2db0[0m <[0;33mline:86:7[0m, [0;33mcol:14[0m>
+[0;34m  | | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c2d28[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;33mcol:11[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c2d90[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c2e38[0m <[0;33mcol:16[0m, [0;33mcol:18[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2e08[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2dc8[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2d28[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2e20[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2de8[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c2e78[0m <[0;33mcol:21[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2e58[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2d28[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c8260[0m <[0;33mcol:25[0m, [0;33mline:95:2[0m>
+[0;34m  |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60c8228[0m <[0;33mline:87:3[0m, [0;33mline:94:3[0m>
+[0;34m  |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c2f30[0m <[0;33mline:87:8[0m, [0;33mcol:15[0m>
+[0;34m  |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c2ea8[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m j[0m [0;32m'int'[0m cinit
+[0;34m  |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c2f10[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c2fb8[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2f88[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2f48[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2ea8[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c2fa0[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2f68[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c2ff8[0m <[0;33mcol:22[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c2fd8[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2ea8[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c8210[0m <[0;33mcol:26[0m, [0;33mline:94:3[0m>
+[0;34m  |       `-[0m[0;1;35mForStmt[0m[0;33m 0x60c81d8[0m <[0;33mline:88:4[0m, [0;33mline:93:4[0m>
+[0;34m  |         |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c30b0[0m <[0;33mline:88:9[0m, [0;33mcol:16[0m>
+[0;34m  |         | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c3028[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;33mcol:13[0m used[0;1;36m k[0m [0;32m'int'[0m cinit
+[0;34m  |         |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c3090[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |         |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |         |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c3120[0m <[0;33mcol:18[0m, [0;33mcol:20[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |         | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3108[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |         | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c30c8[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3028[0m[0;1;36m 'k'[0m [0;32m'int'[0m
+[0;34m  |         | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c30e8[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 4[0m
+[0;34m  |         |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c3160[0m <[0;33mcol:23[0m, [0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3140[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3028[0m[0;1;36m 'k'[0m [0;32m'int'[0m
+[0;34m  |         `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c81b0[0m <[0;33mcol:27[0m, [0;33mline:93:4[0m>
+[0;34m  |           |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c3570[0m <[0;33mline:89:5[0m, [0;33mcol:32[0m>
+[0;34m  |           | |-[0m[0;1;32mVarDecl[0m[0;33m 0x60c3190[0m <[0;33mcol:5[0m, [0;33mcol:19[0m> [0;33mcol:9[0m used[0;1;36m x[0m [0;32m'int'[0m cinit
+[0;34m  |           | | `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c3360[0m <[0;33mcol:11[0m, [0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '+'
+[0;34m  |           | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3330[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c31f8[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2d28[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |           | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3348[0m <[0;33mcol:13[0m, [0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           | |     `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c3310[0m <[0;33mcol:13[0m, [0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           | |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c32f8[0m <[0;33mcol:13[0m, [0;33mcol:16[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           | |       | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c32b8[0m <[0;33mcol:13[0m, [0;33mcol:16[0m> [0;32m'int [2]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           | |       |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3288[0m <[0;33mcol:13[0m> [0;32m'int (*)[2]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           | |       |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3218[0m <[0;33mcol:13[0m> [0;32m'int [4][2]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f99030[0m[0;1;36m 'd'[0m [0;32m'int [4][2]'[0m
+[0;34m  |           | |       |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c32a0[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           | |       |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3238[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3028[0m[0;1;36m 'k'[0m [0;32m'int'[0m
+[0;34m  |           | |       `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c32d8[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |           | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c3398[0m <[0;33mcol:5[0m, [0;33mcol:31[0m> [0;33mcol:21[0m used[0;1;36m y[0m [0;32m'int'[0m cinit
+[0;34m  |           |   `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c3538[0m <[0;33mcol:23[0m, [0;33mcol:31[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '+'
+[0;34m  |           |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3508[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3400[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2ea8[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |           |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3520[0m <[0;33mcol:25[0m, [0;33mcol:31[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |       `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c34e8[0m <[0;33mcol:25[0m, [0;33mcol:31[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c34d0[0m <[0;33mcol:25[0m, [0;33mcol:28[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           |         | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c3490[0m <[0;33mcol:25[0m, [0;33mcol:28[0m> [0;32m'int [2]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           |         |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3460[0m <[0;33mcol:25[0m> [0;32m'int (*)[2]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           |         |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3420[0m <[0;33mcol:25[0m> [0;32m'int [4][2]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f99030[0m[0;1;36m 'd'[0m [0;32m'int [4][2]'[0m
+[0;34m  |           |         |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3478[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |         |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3440[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3028[0m[0;1;36m 'k'[0m [0;32m'int'[0m
+[0;34m  |           |         `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c34b0[0m <[0;33mcol:30[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |           |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c5bf8[0m <[0;33mline:91:5[0m, [0;33mcol:38[0m>
+[0;34m  |           | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c36a8[0m <[0;33mcol:5[0m, [0;33mcol:37[0m> [0;33mcol:25[0m used[0;1;36m A[0m [0;32m'pair<double, double>':'std::pair<double, double>'[0m cinit
+[0;34m  |           |   `-[0m[0;1;35mExprWithCleanups[0m[0;33m 0x60c5be0[0m <[0;33mcol:27[0m, [0;33mcol:37[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m[0m[0;36m[0m
+[0;34m  |           |     `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x60c5bb0[0m <[0;33mcol:27[0m, [0;33mcol:37[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m[0m[0;36m[0m [0;32m'void (std::pair<double, double> &&) noexcept'[0m elidable
+[0;34m  |           |       `-[0m[0;1;35mMaterializeTemporaryExpr[0m[0;33m 0x60c5b98[0m <[0;33mcol:27[0m, [0;33mcol:37[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m xvalue[0m[0;36m[0m
+[0;34m  |           |         `-[0m[0;1;35mCallExpr[0m[0;33m 0x60c3870[0m <[0;33mcol:27[0m, [0;33mcol:37[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m[0m[0;36m[0m
+[0;34m  |           |           |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c3858[0m <[0;33mcol:27[0m> [0;32m'pair<double, double> (*)(int, int, int, int)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |           |           | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c37d8[0m <[0;33mcol:27[0m> [0;32m'pair<double, double> (int, int, int, int)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x5f99a00[0m[0;1;36m 'ok'[0m [0;32m'pair<double, double> (int, int, int, int)'[0m
+[0;34m  |           |           |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c38b0[0m <[0;33mcol:30[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |           | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3758[0m <[0;33mcol:30[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2d28[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |           |           |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c38c8[0m <[0;33mcol:32[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |           | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3778[0m <[0;33mcol:32[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2ea8[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |           |           |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c38e0[0m <[0;33mcol:34[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |           | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c3798[0m <[0;33mcol:34[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3190[0m[0;1;36m 'x'[0m [0;32m'int'[0m
+[0;34m  |           |           `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c38f8[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |             `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c37b8[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3398[0m[0;1;36m 'y'[0m [0;32m'int'[0m
+[0;34m  |           `-[0m[0;1;35mIfStmt[0m[0;33m 0x60c8198[0m <[0;33mline:92:5[0m, [0;33mcol:63[0m>
+[0;34m  |             |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c5cc8[0m <[0;33mcol:9[0m, [0;33mcol:18[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '>'
+[0;34m  |             | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5c98[0m <[0;33mcol:9[0m, [0;33mcol:11[0m> [0;32m'double':'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |             | | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c5c30[0m <[0;33mcol:9[0m, [0;33mcol:11[0m> [0;32m'double':'double'[0m[0;36m lvalue[0m[0;36m[0m .first[0;33m 0x5f9a848[0m
+[0;34m  |             | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5c10[0m <[0;33mcol:9[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c36a8[0m[0;1;36m 'A'[0m [0;32m'pair<double, double>':'std::pair<double, double>'[0m
+[0;34m  |             | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5cb0[0m <[0;33mcol:17[0m, [0;33mcol:18[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |             |   `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c5c80[0m <[0;33mcol:17[0m, [0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m prefix '-'
+[0;34m  |             |     `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c5c60[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 47[0m
+[0;34m  |             `-[0m[0;1;35mExprWithCleanups[0m[0;33m 0x60c8180[0m <[0;33mcol:22[0m, [0;33mcol:63[0m> [0;32m'void'[0m[0;36m[0m[0;36m[0m
+[0;34m  |               `-[0m[0;1;35mCXXMemberCallExpr[0m[0;33m 0x60c8140[0m <[0;33mcol:22[0m, [0;33mcol:63[0m> [0;32m'void'[0m[0;36m[0m[0;36m[0m
+[0;34m  |                 |-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c8110[0m <[0;33mcol:22[0m, [0;33mcol:30[0m> [0;32m'<bound member function type>'[0m[0;36m[0m[0;36m[0m .push_back[0;33m 0x5f86c28[0m
+[0;34m  |                 | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c5f38[0m <[0;33mcol:22[0m, [0;33mcol:28[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |                 |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5f08[0m <[0;33mcol:22[0m, [0;33mcol:25[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |                 |   | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c5ec8[0m <[0;33mcol:22[0m, [0;33mcol:25[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |                 |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5e98[0m <[0;33mcol:22[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |                 |   |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5e58[0m <[0;33mcol:22[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |                 |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5eb0[0m <[0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                 |   |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5e78[0m <[0;33mcol:24[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2d28[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |                 |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c5f20[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                 |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5ee8[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c2ea8[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |                 `-[0m[0;1;35mMaterializeTemporaryExpr[0m[0;33m 0x60c8168[0m <[0;33mcol:40[0m, [0;33mcol:62[0m> [0;32m'P'[0m[0;36m xvalue[0m[0;36m[0m
+[0;34m  |                   `-[0m[0;1;35mCXXTemporaryObjectExpr[0m[0;33m 0x60c63a8[0m <[0;33mcol:40[0m, [0;33mcol:62[0m> [0;32m'P'[0m[0;36m[0m[0;36m[0m [0;32m'void (int, int, double, double)'[0m
+[0;34m  |                     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c6348[0m <[0;33mcol:42[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5fc8[0m <[0;33mcol:42[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3190[0m[0;1;36m 'x'[0m [0;32m'int'[0m
+[0;34m  |                     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c6360[0m <[0;33mcol:44[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c5fe8[0m <[0;33mcol:44[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c3398[0m[0;1;36m 'y'[0m [0;32m'int'[0m
+[0;34m  |                     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c6378[0m <[0;33mcol:46[0m, [0;33mcol:48[0m> [0;32m'double':'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                     | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c6028[0m <[0;33mcol:46[0m, [0;33mcol:48[0m> [0;32m'double':'double'[0m[0;36m lvalue[0m[0;36m[0m .first[0;33m 0x5f9a848[0m
+[0;34m  |                     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c6008[0m <[0;33mcol:46[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c36a8[0m[0;1;36m 'A'[0m [0;32m'pair<double, double>':'std::pair<double, double>'[0m
+[0;34m  |                     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c6390[0m <[0;33mcol:54[0m, [0;33mcol:56[0m> [0;32m'double':'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                       `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c6078[0m <[0;33mcol:54[0m, [0;33mcol:56[0m> [0;32m'double':'double'[0m[0;36m lvalue[0m[0;36m[0m .second[0;33m 0x5f9a8a8[0m
+[0;34m  |                         `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c6058[0m <[0;33mcol:54[0m> [0;32m'pair<double, double>':'std::pair<double, double>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c36a8[0m[0;1;36m 'A'[0m [0;32m'pair<double, double>':'std::pair<double, double>'[0m
+[0;34m  |-[0m[0;1;35mForStmt[0m[0;33m 0x60c8920[0m <[0;33mline:108:2[0m, [0;33mline:113:2[0m>
+[0;34m  | |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c8350[0m <[0;33mline:108:7[0m, [0;33mcol:14[0m>
+[0;34m  | | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c82c8[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;33mcol:11[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8330[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c83d8[0m <[0;33mcol:16[0m, [0;33mcol:18[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c83a8[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8368[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c82c8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c83c0[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8388[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8418[0m <[0;33mcol:21[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c83f8[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c82c8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c8908[0m <[0;33mcol:25[0m, [0;33mline:113:2[0m>
+[0;34m  |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60c88d0[0m <[0;33mline:109:3[0m, [0;33mline:112:3[0m>
+[0;34m  |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c84d0[0m <[0;33mline:109:8[0m, [0;33mcol:15[0m>
+[0;34m  |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8448[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m j[0m [0;32m'int'[0m cinit
+[0;34m  |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c84b0[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8558[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8528[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c84e8[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8448[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8540[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8508[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8598[0m <[0;33mcol:22[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8578[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8448[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c88b0[0m <[0;33mcol:26[0m, [0;33mline:112:3[0m>
+[0;34m  |       |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8710[0m <[0;33mline:110:4[0m, [0;33mcol:12[0m> [0;32m'bool'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |       | |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c86b8[0m <[0;33mcol:4[0m, [0;33mcol:10[0m> [0;32m'bool'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8688[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'bool *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       | | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c8648[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'bool [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       | | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8618[0m <[0;33mcol:4[0m> [0;32m'bool (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       | | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c85b0[0m <[0;33mcol:4[0m> [0;32m'bool [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1af8[0m[0;1;36m 'u'[0m [0;32m'bool [200][200]'[0m
+[0;34m  |       | | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8630[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c85d0[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c82c8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |       | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c86a0[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8668[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8448[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |       | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c86f8[0m <[0;33mcol:12[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToBoolean[0m>
+[0;34m  |       |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c86d8[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |       `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8890[0m <[0;33mline:111:4[0m, [0;33mline:20:13[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |         |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c8838[0m <[0;33mline:111:4[0m, [0;33mcol:10[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |         | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8808[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |         | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c87c8[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |         | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8798[0m <[0;33mcol:4[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |         | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8730[0m <[0;33mcol:4[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  |         | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c87b0[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |         | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8750[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c82c8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |         | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8820[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |         |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c87e8[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8448[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8878[0m <[0;33mline:20:13[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |           `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8858[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1000000000[0m
+[0;34m  |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8a60[0m <[0;33mline:115:2[0m, [0;33mcol:10[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  | |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c8a08[0m <[0;33mcol:2[0m, [0;33mcol:8[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c89f0[0m <[0;33mcol:2[0m, [0;33mcol:5[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c89b0[0m <[0;33mcol:2[0m, [0;33mcol:5[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  | | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8998[0m <[0;33mcol:2[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8958[0m <[0;33mcol:2[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  | | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8978[0m <[0;33mcol:4[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c89d0[0m <[0;33mcol:7[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8a48[0m <[0;33mcol:10[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8a28[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |-[0m[0;1;35mForStmt[0m[0;33m 0x60cbae8[0m <[0;33mline:117:2[0m, [0;33mline:153:2[0m>
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60cbaa8[0m <[0;33mline:117:10[0m, [0;33mline:153:2[0m>
+[0;34m  |   |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c8b38[0m <[0;33mline:118:3[0m, [0;33mcol:16[0m>
+[0;34m  |   | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8a98[0m <[0;33mcol:3[0m, [0;33mline:20:13[0m> [0;33mline:118:10[0m used[0;1;36m mm[0m [0;32m'double'[0m cinit
+[0;34m  |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8b20[0m <[0;33mline:20:13[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |   |     `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8b00[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1000000000[0m
+[0;34m  |   |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c8cd8[0m <[0;33mline:119:3[0m, [0;33mcol:20[0m>
+[0;34m  |   | |-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8b68[0m <[0;33mcol:3[0m, [0;33mcol:12[0m> [0;33mcol:7[0m used[0;1;36m pp1[0m [0;32m'int'[0m cinit
+[0;34m  |   | | `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8bf0[0m <[0;33mcol:11[0m, [0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m prefix '-'
+[0;34m  |   | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8bd0[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |   | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8c20[0m <[0;33mcol:3[0m, [0;33mcol:19[0m> [0;33mcol:14[0m used[0;1;36m pp2[0m [0;32m'int'[0m cinit
+[0;34m  |   |   `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8ca8[0m <[0;33mcol:18[0m, [0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m prefix '-'
+[0;34m  |   |     `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8c88[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |   |-[0m[0;1;35mForStmt[0m[0;33m 0x60c9590[0m <[0;33mline:120:3[0m, [0;33mline:130:3[0m>
+[0;34m  |   | |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c8d90[0m <[0;33mline:120:8[0m, [0;33mcol:15[0m>
+[0;34m  |   | | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8d08[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  |   | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8d70[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |   | |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |   | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8e18[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |   | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8de8[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8da8[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8e00[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8dc8[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m  |   | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8e58[0m <[0;33mcol:22[0m, [0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |   | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8e38[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c9578[0m <[0;33mcol:26[0m, [0;33mline:130:3[0m>
+[0;34m  |   |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60c9540[0m <[0;33mline:121:4[0m, [0;33mline:129:4[0m>
+[0;34m  |   |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c8f10[0m <[0;33mline:121:9[0m, [0;33mcol:16[0m>
+[0;34m  |   |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c8e88[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;33mcol:13[0m used[0;1;36m j[0m [0;32m'int'[0m cinit
+[0;34m  |   |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c8ef0[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |   |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |   |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c8f98[0m <[0;33mcol:18[0m, [0;33mcol:20[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |   |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8f68[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |     | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8f28[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c8f80[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8f48[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m  |   |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c8fd8[0m <[0;33mcol:23[0m, [0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |   |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8fb8[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c9520[0m <[0;33mcol:27[0m, [0;33mline:129:4[0m>
+[0;34m  |   |       |-[0m[0;1;35mIfStmt[0m[0;33m 0x60c9110[0m <[0;33mline:122:5[0m, [0;33mcol:18[0m>
+[0;34m  |   |       | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c90f0[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |       | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c90d0[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'bool'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |       | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c90a0[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'bool *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |       | |   | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9060[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'bool [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |       | |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9030[0m <[0;33mcol:9[0m> [0;32m'bool (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |       | |   |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c8ff0[0m <[0;33mcol:9[0m> [0;32m'bool [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1af8[0m[0;1;36m 'u'[0m [0;32m'bool [200][200]'[0m
+[0;34m  |   |       | |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9048[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |       | |   |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9010[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   |       | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c90b8[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |       | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9080[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |       | `-[0m[0;1;35mContinueStmt[0m[0;33m 0x60c9108[0m <[0;33mcol:18[0m>
+[0;34m  |   |       `-[0m[0;1;35mIfStmt[0m[0;33m 0x60c9508[0m <[0;33mline:124:5[0m, [0;33mline:128:5[0m>
+[0;34m  |   |         |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c9278[0m <[0;33mline:124:9[0m, [0;33mcol:17[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |   |         | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9248[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |         | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9208[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |         | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c91d8[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |         | |   | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9198[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |         | |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9168[0m <[0;33mcol:9[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |         | |   |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9128[0m <[0;33mcol:9[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  |   |         | |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9180[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |         | |   |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9148[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   |         | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c91f0[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |         | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c91b8[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |         | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9260[0m <[0;33mcol:17[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |         |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9228[0m <[0;33mcol:17[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8a98[0m[0;1;36m 'mm'[0m [0;32m'double'[0m
+[0;34m  |   |         `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60c94e0[0m <[0;33mcol:20[0m, [0;33mline:128:5[0m>
+[0;34m  |   |           |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c93d0[0m <[0;33mline:125:6[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |   |           | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9298[0m <[0;33mcol:6[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8a98[0m[0;1;36m 'mm'[0m [0;32m'double'[0m
+[0;34m  |   |           | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c93b8[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |           |   `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9398[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |           |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9368[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |           |     | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9328[0m <[0;33mcol:9[0m, [0;33mcol:12[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   |           |     |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c92f8[0m <[0;33mcol:9[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   |           |     |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c92b8[0m <[0;33mcol:9[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  |   |           |     |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9310[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |           |     |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c92d8[0m <[0;33mcol:11[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   |           |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9380[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |           |       `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9348[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |           |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c9448[0m <[0;33mline:126:6[0m, [0;33mcol:10[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |   |           | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c93f0[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |   |           | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9430[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |           |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9410[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8d08[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |   |           `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c94c0[0m <[0;33mline:127:6[0m, [0;33mcol:10[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |   |             |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9468[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |   |             `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c94a8[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |               `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9488[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8e88[0m[0;1;36m 'j'[0m [0;32m'int'[0m
+[0;34m  |   |-[0m[0;1;35mIfStmt[0m[0;33m 0x60c9660[0m <[0;33mline:132:3[0m, [0;33mcol:15[0m>
+[0;34m  |   | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c9638[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '=='
+[0;34m  |   | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9620[0m <[0;33mcol:7[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c95c8[0m <[0;33mcol:7[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |   | | `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c9608[0m <[0;33mcol:12[0m, [0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m prefix '-'
+[0;34m  |   | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c95e8[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |   | `-[0m[0;1;35mBreakStmt[0m[0;33m 0x60c9658[0m <[0;33mcol:15[0m>
+[0;34m  |   |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c97b0[0m <[0;33mline:134:3[0m, [0;33mcol:15[0m> [0;32m'bool'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |   | |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9758[0m <[0;33mcol:3[0m, [0;33mcol:13[0m> [0;32m'bool'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9728[0m <[0;33mcol:3[0m, [0;33mcol:8[0m> [0;32m'bool *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   | | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c96e8[0m <[0;33mcol:3[0m, [0;33mcol:8[0m> [0;32m'bool [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |   | | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c96b8[0m <[0;33mcol:3[0m> [0;32m'bool (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |   | | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9678[0m <[0;33mcol:3[0m> [0;32m'bool [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1af8[0m[0;1;36m 'u'[0m [0;32m'bool [200][200]'[0m
+[0;34m  |   | | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c96d0[0m <[0;33mcol:5[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   | | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9698[0m <[0;33mcol:5[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |   | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9740[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9708[0m <[0;33mcol:10[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |   | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9798[0m <[0;33mcol:15[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToBoolean[0m>
+[0;34m  |   |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c9778[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |   `-[0m[0;1;35mForStmt[0m[0;33m 0x60cba70[0m <[0;33mline:136:3[0m, [0;33mline:152:3[0m>
+[0;34m  |     |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60c9870[0m <[0;33mline:136:8[0m, [0;33mcol:15[0m>
+[0;34m  |     | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c97e8[0m <[0;33mcol:8[0m, [0;33mcol:14[0m> [0;33mcol:12[0m used[0;1;36m i[0m [0;32m'int'[0m cinit
+[0;34m  |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60c9850[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |     |-[0m[0;34m<<<NULL>>>[0m
+[0;34m  |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60c9a70[0m <[0;33mcol:17[0m, [0;33mcol:36[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9a58[0m <[0;33mcol:17[0m> [0;32m'unsigned long'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m  |     | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9a40[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9888[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c97e8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |     | `-[0m[0;1;35mCXXMemberCallExpr[0m[0;33m 0x60c99d8[0m <[0;33mcol:19[0m, [0;33mcol:36[0m> [0;32m'std::vector::size_type':'unsigned long'[0m[0;36m[0m[0;36m[0m
+[0;34m  |     |   `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c99a8[0m <[0;33mcol:19[0m, [0;33mcol:31[0m> [0;32m'<bound member function type>'[0m[0;36m[0m[0;36m[0m .size[0;33m 0x5f85220[0m
+[0;34m  |     |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9a28[0m <[0;33mcol:19[0m, [0;33mcol:29[0m> [0;32m'const std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m <[0;31mNoOp[0m>
+[0;34m  |     |       `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9988[0m <[0;33mcol:19[0m, [0;33mcol:29[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |     |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9958[0m <[0;33mcol:19[0m, [0;33mcol:24[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |     |         | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9918[0m <[0;33mcol:19[0m, [0;33mcol:24[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |     |         |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c98e8[0m <[0;33mcol:19[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |     |         |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c98a8[0m <[0;33mcol:19[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |     |         |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9900[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |         |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c98c8[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |     |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9970[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |     |           `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9938[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |     |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x60c9ab0[0m <[0;33mcol:39[0m, [0;33mcol:40[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m  |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9a90[0m <[0;33mcol:39[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c97e8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |     `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60cba30[0m <[0;33mcol:43[0m, [0;33mline:152:3[0m>
+[0;34m  |       |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60ca050[0m <[0;33mline:137:4[0m, [0;33mcol:45[0m>
+[0;34m  |       | |-[0m[0;1;32mVarDecl[0m[0;33m 0x60c9ae0[0m <[0;33mcol:4[0m, [0;33mcol:25[0m> [0;33mcol:8[0m used[0;1;36m x[0m [0;32m'int'[0m cinit
+[0;34m  |       | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9d98[0m <[0;33mcol:10[0m, [0;33mcol:25[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |   `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c9d68[0m <[0;33mcol:10[0m, [0;33mcol:25[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m .x[0;33m 0x5f6fdf0[0m
+[0;34m  |       | |     `-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x60c9d30[0m <[0;33mcol:10[0m, [0;33mcol:23[0m> [0;32m'__gnu_cxx::__alloc_traits<std::allocator<P> >::value_type':'P'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       | |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9d18[0m <[0;33mcol:21[0m, [0;33mcol:23[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (*)(std::vector::size_type) noexcept'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |       | |       | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9c98[0m <[0;33mcol:21[0m, [0;33mcol:23[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x5f85b10[0m[0;1;36m 'operator[]'[0m [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m
+[0;34m  |       | |       |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9c28[0m <[0;33mcol:10[0m, [0;33mcol:20[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       | |       | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9bf8[0m <[0;33mcol:10[0m, [0;33mcol:15[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       | |       | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9bb8[0m <[0;33mcol:10[0m, [0;33mcol:15[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       | |       | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9b88[0m <[0;33mcol:10[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       | |       | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9b48[0m <[0;33mcol:10[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |       | |       | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9ba0[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |       | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9b68[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |       | |       | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9c10[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |       |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9bd8[0m <[0;33mcol:17[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |       | |       `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9c80[0m <[0;33mcol:22[0m> [0;32m'std::vector::size_type':'unsigned long'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m  |       | |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9c68[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |           `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9c48[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c97e8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |       | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60c9dc8[0m <[0;33mcol:4[0m, [0;33mcol:44[0m> [0;33mcol:27[0m used[0;1;36m y[0m [0;32m'int'[0m cinit
+[0;34m  |       |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca020[0m <[0;33mcol:29[0m, [0;33mcol:44[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60c9ff0[0m <[0;33mcol:29[0m, [0;33mcol:44[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m .y[0;33m 0x5f6fe58[0m
+[0;34m  |       |       `-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x60c9fb8[0m <[0;33mcol:29[0m, [0;33mcol:42[0m> [0;32m'__gnu_cxx::__alloc_traits<std::allocator<P> >::value_type':'P'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9fa0[0m <[0;33mcol:40[0m, [0;33mcol:42[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (*)(std::vector::size_type) noexcept'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |       |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9f80[0m <[0;33mcol:40[0m, [0;33mcol:42[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x5f85b10[0m[0;1;36m 'operator[]'[0m [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m
+[0;34m  |       |         |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9f10[0m <[0;33mcol:29[0m, [0;33mcol:39[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9ee0[0m <[0;33mcol:29[0m, [0;33mcol:34[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |         | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60c9ea0[0m <[0;33mcol:29[0m, [0;33mcol:34[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9e70[0m <[0;33mcol:29[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |         | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9e30[0m <[0;33mcol:29[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |       |         | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9e88[0m <[0;33mcol:31[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |         | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9e50[0m <[0;33mcol:31[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |       |         | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9ef8[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |         |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9ec0[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |       |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9f68[0m <[0;33mcol:41[0m> [0;32m'std::vector::size_type':'unsigned long'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m  |       |           `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60c9f50[0m <[0;33mcol:41[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |             `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60c9f30[0m <[0;33mcol:41[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c97e8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |       |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60ca2f0[0m <[0;33mline:138:4[0m, [0;33mcol:31[0m>
+[0;34m  |       | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60ca080[0m <[0;33mcol:4[0m, [0;33mcol:29[0m> [0;33mcol:11[0m used[0;1;36m v1[0m [0;32m'double'[0m cinit
+[0;34m  |       |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca2d8[0m <[0;33mcol:14[0m, [0;33mcol:29[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     `-[0m[0;1;35mMemberExpr[0m[0;33m 0x60ca2a8[0m <[0;33mcol:14[0m, [0;33mcol:29[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m .v1[0;33m 0x5f6fed8[0m
+[0;34m  |       |       `-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x60ca270[0m <[0;33mcol:14[0m, [0;33mcol:27[0m> [0;32m'__gnu_cxx::__alloc_traits<std::allocator<P> >::value_type':'P'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca258[0m <[0;33mcol:25[0m, [0;33mcol:27[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (*)(std::vector::size_type) noexcept'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |       |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca238[0m <[0;33mcol:25[0m, [0;33mcol:27[0m> [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x5f85b10[0m[0;1;36m 'operator[]'[0m [0;32m'std::vector<P, std::allocator<P> >::reference (std::vector::size_type) noexcept'[0m
+[0;34m  |       |         |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60ca1c8[0m <[0;33mcol:14[0m, [0;33mcol:24[0m> [0;32m'vector<P>':'std::vector<P, std::allocator<P> >'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca198[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;32m'vector<P> *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |         | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60ca158[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;32m'vector<P> [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |         | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca128[0m <[0;33mcol:14[0m> [0;32m'vector<P> (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |         | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca0e8[0m <[0;33mcol:14[0m> [0;32m'vector<P> [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f70d28[0m[0;1;36m 'g'[0m [0;32m'vector<P> [200][200]'[0m
+[0;34m  |       |         | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca140[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |         | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca108[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |       |         | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca1b0[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |         |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca178[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |       |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca220[0m <[0;33mcol:26[0m> [0;32m'std::vector::size_type':'unsigned long'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m  |       |           `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca208[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |             `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca1e8[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c97e8[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m  |       |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60caa48[0m <[0;33mline:140:4[0m, [0;33mcol:23[0m>
+[0;34m  |       | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60ca320[0m <[0;33mcol:4[0m, [0;33mcol:22[0m> [0;33mcol:11[0m used[0;1;36m t[0m [0;32m'double'[0m cinit
+[0;34m  |       |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caa30[0m <[0;33mcol:13[0m, [0;33mcol:22[0m> [0;32m'double':'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     `-[0m[0;1;35mCallExpr[0m[0;33m 0x60ca9d0[0m <[0;33mcol:13[0m, [0;33mcol:22[0m> [0;32m'const double':'const double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60ca9b8[0m <[0;33mcol:13[0m> [0;32m'const double &(*)(const double &, const double &)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |       |       | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca7a0[0m <[0;33mcol:13[0m> [0;32m'const double &(const double &, const double &)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x60ca668[0m[0;1;36m 'max'[0m [0;32m'const double &(const double &, const double &)'[0m ([0;1;32mFunctionTemplate[0m[0;33m 0x59b3158[0m[0;1;36m 'max'[0m)
+[0;34m  |       |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caa00[0m <[0;33mcol:17[0m> [0;32m'const double'[0m[0;36m lvalue[0m[0;36m[0m <[0;31mNoOp[0m>
+[0;34m  |       |       | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca3e8[0m <[0;33mcol:17[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8a98[0m[0;1;36m 'mm'[0m [0;32m'double'[0m
+[0;34m  |       |       `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caa18[0m <[0;33mcol:20[0m> [0;32m'const double'[0m[0;36m lvalue[0m[0;36m[0m <[0;31mNoOp[0m>
+[0;34m  |       |         `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60ca408[0m <[0;33mcol:20[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60ca080[0m[0;1;36m 'v1'[0m [0;32m'double'[0m
+[0;34m  |       |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60caae0[0m <[0;33mline:142:4[0m, [0;33mcol:13[0m>
+[0;34m  |       | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60caa78[0m <[0;33mcol:4[0m, [0;33mcol:11[0m> [0;33mcol:11[0m used[0;1;36m v2[0m [0;32m'double'[0m
+[0;34m  |       |-[0m[0;1;35mIfStmt[0m[0;33m 0x60cb138[0m <[0;33mline:144:4[0m, [0;33mline:149:4[0m> has_else
+[0;34m  |       | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cab80[0m <[0;33mline:144:8[0m, [0;33mcol:10[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<'
+[0;34m  |       | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cab68[0m <[0;33mcol:8[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mFloatingCast[0m>
+[0;34m  |       | | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cab38[0m <[0;33mcol:8[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60caaf8[0m <[0;33mcol:8[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60ca320[0m[0;1;36m 't'[0m [0;32m'double'[0m
+[0;34m  |       | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cab50[0m <[0;33mcol:10[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cab18[0m <[0;33mcol:10[0m> [0;32m'long double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6f730[0m[0;1;36m 'EPS'[0m [0;32m'long double'[0m
+[0;34m  |       | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cabf8[0m <[0;33mcol:15[0m, [0;33mcol:18[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |       | | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60caba0[0m <[0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60caa78[0m[0;1;36m 'v2'[0m [0;32m'double'[0m
+[0;34m  |       | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cabe0[0m <[0;33mcol:18[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       | |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cabc0[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m  |       | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x60cb118[0m <[0;33mline:145:8[0m, [0;33mline:149:4[0m>
+[0;34m  |       |   |-[0m[0;1;35mDeclStmt[0m[0;33m 0x60cad98[0m <[0;33mline:146:5[0m, [0;33mcol:21[0m>
+[0;34m  |       |   | `-[0m[0;1;32mVarDecl[0m[0;33m 0x60cac30[0m <[0;33mcol:5[0m, [0;33mcol:19[0m> [0;33mcol:12[0m used[0;1;36m HH[0m [0;32m'double'[0m cinit
+[0;34m  |       |   |   `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cad78[0m <[0;33mcol:15[0m, [0;33mcol:19[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m  |       |   |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cad60[0m <[0;33mcol:15[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |   |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cad48[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |   |     |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cac98[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fba0[0m[0;1;36m 'H'[0m [0;32m'int'[0m
+[0;34m  |       |   |     `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cad28[0m <[0;33mcol:17[0m, [0;33mcol:19[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '*'
+[0;34m  |       |   |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cacf8[0m <[0;33mcol:17[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |   |       | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cacb8[0m <[0;33mcol:17[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60ca320[0m[0;1;36m 't'[0m [0;32m'double'[0m
+[0;34m  |       |   |       `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cad10[0m <[0;33mcol:19[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |   |         `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cacd8[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 10[0m
+[0;34m  |       |   `-[0m[0;1;35mIfStmt[0m[0;33m 0x60cb0f0[0m <[0;33mline:147:5[0m, [0;33mline:148:13[0m> has_else
+[0;34m  |       |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cafe0[0m <[0;33mline:147:9[0m, [0;33mcol:28[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '>'
+[0;34m  |       |     | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60caf88[0m <[0;33mcol:9[0m, [0;33mcol:24[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m '+'
+[0;34m  |       |     | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caf70[0m <[0;33mcol:9[0m, [0;33mcol:22[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mFloatingCast[0m>
+[0;34m  |       |     | | | `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60caf18[0m <[0;33mcol:9[0m, [0;33mcol:22[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m  |       |     | | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caed0[0m <[0;33mcol:9[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     | | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cadb0[0m <[0;33mcol:9[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60cac30[0m[0;1;36m 'HH'[0m [0;32m'double'[0m
+[0;34m  |       |     | | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caf00[0m <[0;33mcol:12[0m, [0;33mcol:22[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |     | | |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caee8[0m <[0;33mcol:12[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     | | |       `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60caeb0[0m <[0;33mcol:12[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |     | | |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cae80[0m <[0;33mcol:12[0m, [0;33mcol:17[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |     | | |         | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cae40[0m <[0;33mcol:12[0m, [0;33mcol:17[0m> [0;32m'int [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |       |     | | |         |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cae10[0m <[0;33mcol:12[0m> [0;32m'int (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |       |     | | |         |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cadd0[0m <[0;33mcol:12[0m> [0;32m'int [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fa20[0m[0;1;36m 'h'[0m [0;32m'int [200][200]'[0m
+[0;34m  |       |     | | |         |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cae28[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     | | |         |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cadf0[0m <[0;33mcol:14[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8b68[0m[0;1;36m 'pp1'[0m [0;32m'int'[0m
+[0;34m  |       |     | | |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cae98[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     | | |           `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cae60[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c8c20[0m[0;1;36m 'pp2'[0m [0;32m'int'[0m
+[0;34m  |       |     | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60caf58[0m <[0;33mcol:24[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |       |     | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60caf38[0m <[0;33mcol:24[0m> [0;32m'long double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6f730[0m[0;1;36m 'EPS'[0m [0;32m'long double'[0m
+[0;34m  |       |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cafc8[0m <[0;33mcol:28[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cafa8[0m <[0;33mcol:28[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 20[0m
+[0;34m  |       |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cb058[0m <[0;33mcol:32[0m, [0;33mcol:35[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |       |     | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb000[0m <[0;33mcol:32[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60caa78[0m[0;1;36m 'v2'[0m [0;32m'double'[0m
+[0;34m  |       |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb040[0m <[0;33mcol:35[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cb020[0m <[0;33mcol:35[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m  |       |     `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cb0d0[0m <[0;33mline:148:10[0m, [0;33mcol:13[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |       |       |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb078[0m <[0;33mcol:10[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60caa78[0m[0;1;36m 'v2'[0m [0;32m'double'[0m
+[0;34m  |       |       `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb0b8[0m <[0;33mcol:13[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralToFloating[0m>
+[0;34m  |       |         `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cb098[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 10[0m
+[0;34m  |       `-[0m[0;1;35mExprWithCleanups[0m[0;33m 0x60cba18[0m <[0;33mline:151:4[0m, [0;33mcol:28[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |         `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cb9f8[0m <[0;33mcol:4[0m, [0;33mcol:28[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |           |-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cb240[0m <[0;33mcol:4[0m, [0;33mcol:10[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb210[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           | | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cb1d0[0m <[0;33mcol:4[0m, [0;33mcol:7[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |           | |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb1a0[0m <[0;33mcol:4[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |           | |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb160[0m <[0;33mcol:4[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  |           | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb1b8[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb180[0m <[0;33mcol:6[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c9ae0[0m[0;1;36m 'x'[0m [0;32m'int'[0m
+[0;34m  |           | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb228[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |           |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb1f0[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c9dc8[0m[0;1;36m 'y'[0m [0;32m'int'[0m
+[0;34m  |           `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb9e0[0m <[0;33mcol:12[0m, [0;33mcol:28[0m> [0;32m'double':'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |             `-[0m[0;1;35mCallExpr[0m[0;33m 0x60cb980[0m <[0;33mcol:12[0m, [0;33mcol:28[0m> [0;32m'const double':'const double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |               |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb968[0m <[0;33mcol:12[0m> [0;32m'const double &(*)(const double &, const double &)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  |               | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb780[0m <[0;33mcol:12[0m> [0;32m'const double &(const double &, const double &)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x60cb648[0m[0;1;36m 'min'[0m [0;32m'const double &(const double &, const double &)'[0m ([0;1;32mFunctionTemplate[0m[0;33m 0x59b3898[0m[0;1;36m 'min'[0m)
+[0;34m  |               |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb9b0[0m <[0;33mcol:16[0m, [0;33mcol:22[0m> [0;32m'const double'[0m[0;36m lvalue[0m[0;36m[0m <[0;31mNoOp[0m>
+[0;34m  |               | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cb3a0[0m <[0;33mcol:16[0m, [0;33mcol:22[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |               |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb370[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |               |   | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cb330[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |               |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb300[0m <[0;33mcol:16[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  |               |   |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb2c0[0m <[0;33mcol:16[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m  |               |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb318[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |               |   |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb2e0[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c9ae0[0m[0;1;36m 'x'[0m [0;32m'int'[0m
+[0;34m  |               |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb388[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |               |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb350[0m <[0;33mcol:21[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c9dc8[0m[0;1;36m 'y'[0m [0;32m'int'[0m
+[0;34m  |               `-[0m[0;1;35mMaterializeTemporaryExpr[0m[0;33m 0x60cb9c8[0m <[0;33mcol:24[0m, [0;33mcol:26[0m> [0;32m'const double':'const double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  |                 `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cb430[0m <[0;33mcol:24[0m, [0;33mcol:26[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '+'
+[0;34m  |                   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb400[0m <[0;33mcol:24[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb3c0[0m <[0;33mcol:24[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60ca320[0m[0;1;36m 't'[0m [0;32m'double'[0m
+[0;34m  |                   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cb418[0m <[0;33mcol:26[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |                     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cb3e0[0m <[0;33mcol:26[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60caa78[0m[0;1;36m 'v2'[0m [0;32m'double'[0m
+[0;34m  `-[0m[0;1;35mCallExpr[0m[0;33m 0x60cbd40[0m <[0;33mline:164:2[0m, [0;33mcol:29[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m    |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbd28[0m <[0;33mcol:2[0m> [0;32m'int (*)(const char *__restrict, ...)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m    | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cbd08[0m <[0;33mcol:2[0m> [0;32m'int (const char *__restrict, ...)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x52af640[0m[0;1;36m 'printf'[0m [0;32m'int (const char *__restrict, ...)'[0m
+[0;34m    |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbd70[0m <[0;33mcol:9[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x60cbb68[0m <[0;33mcol:9[0m> [0;32m'const char [6]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "%.9f\n"[0m
+[0;34m    `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbd88[0m <[0;33mcol:18[0m, [0;33mcol:28[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cbce8[0m <[0;33mcol:18[0m, [0;33mcol:28[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m        |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbcd0[0m <[0;33mcol:18[0m, [0;33mcol:23[0m> [0;32m'double *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m        | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x60cbc38[0m <[0;33mcol:18[0m, [0;33mcol:23[0m> [0;32m'double [200]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m        |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbc20[0m <[0;33mcol:18[0m> [0;32m'double (*)[200]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m        |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cbb88[0m <[0;33mcol:18[0m> [0;32m'double [200][200]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x60c1c90[0m[0;1;36m 'D'[0m [0;32m'double [200][200]'[0m
+[0;34m        |   `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cbc00[0m <[0;33mcol:20[0m, [0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m        |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbbe8[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m        |     | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cbba8[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6faa0[0m[0;1;36m 'n'[0m [0;32m'int'[0m
+[0;34m        |     `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cbbc8[0m <[0;33mcol:22[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m        `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x60cbcb0[0m <[0;33mcol:25[0m, [0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m          |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x60cbc98[0m <[0;33mcol:25[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m          | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x60cbc58[0m <[0;33mcol:25[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x5f6fb20[0m[0;1;36m 'm'[0m [0;32m'int'[0m
+[0;34m          `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x60cbc78[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+
+Dumping std::__throw_domain_error:
+[0;1;32mFunctionDecl[0m[0;33m 0x67e8da8[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/functexcept.h:65:3[0m, [0;33mline:66:65[0m> [0;33mcol:3[0m[0;1;36m __throw_domain_error[0m [0;32m'void (const char *) __attribute__((noreturn))'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x67e8d18[0m <[0;33mcol:24[0m, [0;33mcol:34[0m> [0;33mcol:35[0m [0;32m'const char *'[0m
+
+Dumping __remaining:
+[0;1;32mParmVarDecl[0m[0;33m 0x69b8cb0[0m <[0;33m/usr/include/time.h:212:9[0m, [0;33mcol:26[0m> [0;33mcol:26[0m[0;1;36m __remaining[0m [0;32m'struct timespec *'[0m
+
+Dumping std::errc::argument_out_of_domain:
+[0;1;32mEnumConstantDecl[0m[0;33m 0x6d65770[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/error_constants.h:47:7[0m, [0;33m/usr/include/asm-generic/errno-base.h:37:15[0m> [0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/error_constants.h:47:7[0m[0;1;36m argument_out_of_domain[0m [0;32m'std::errc'[0m
+[0;34m`-[0m[0;1;35mConstantExpr[0m[0;33m 0x6d65750[0m <[0;33m/usr/include/asm-generic/errno-base.h:37:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 33[0m
+[0;34m  `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x6d65730[0m <[0;33mcol:15[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 33[0m
+
+Dumping std::domain_error:
+[0;1;32mCXXRecordDecl[0m[0;33m 0x6d6a1a8[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept:147:3[0m, [0;33mline:155:3[0m> [0;33mline:147:9[0m class[0;1;36m domain_error[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic has_user_declared_ctor can_const_default_init
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param needs_overload_resolution implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m needs_overload_resolution
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m needs_overload_resolution
+[0;34m| `-[0m[0;1;32mDestructor[0m non_trivial user_declared needs_overload_resolution
+[0;34m|-[0mpublic [0;32m'std::logic_error'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x6d6a308[0m <[0;33mcol:3[0m, [0;33mcol:9[0m> [0;33mcol:9[0m implicit referenced class[0;1;36m domain_error[0m
+[0;34m|-[0m[0;1;32mAccessSpecDecl[0m[0;33m 0x6d6a398[0m <[0;33mline:149:3[0m, [0;33mcol:9[0m> [0;33mcol:3[0m public
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6d6a4a8[0m <[0;33mline:150:5[0m, [0;33mcol:46[0m> [0;33mcol:14[0m[0;1;36m domain_error[0m [0;32m'void (const std::__cxx11::string &)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6d6a3d0[0m <[0;33mcol:27[0m, [0;33mcol:41[0m> [0;33mcol:41[0m[0;1;36m __arg[0m [0;32m'const std::__cxx11::string &'[0m
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6d6a600[0m <[0;33mline:152:5[0m, [0;33mcol:38[0m> [0;33mcol:14[0m[0;1;36m domain_error[0m [0;32m'void (const char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6d6a570[0m <[0;33mcol:27[0m, [0;33mcol:37[0m> [0;33mcol:38[0m [0;32m'const char *'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x6d6a700[0m <[0;33mline:154:5[0m, [0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/c++config.h:138:33[0m> [0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept:154:13[0m[0;1;36m ~domain_error[0m [0;32m'void () noexcept'[0m virtual
+[0;34m| `-[0mOverrides: [ 0x6d69ff8 logic_error::~logic_error 'void () noexcept' ]
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x6d6a7d8[0m <[0;33mline:147:9[0m> [0;33mcol:9[0m implicit[0;1;36m domain_error[0m [0;32m'void (const std::domain_error &)'[0m inline default noexcept-unevaluated 0x6d6a7d8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6d6a8e8[0m <[0;33mcol:9[0m> [0;33mcol:9[0m [0;32m'const std::domain_error &'[0m
+[0;34m`-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x6d6a988[0m <[0;33mcol:9[0m> [0;33mcol:9[0m implicit[0;1;36m operator=[0m [0;32m'std::domain_error &(const std::domain_error &)'[0m inline default noexcept-unevaluated 0x6d6a988
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6d6aa98[0m <[0;33mcol:9[0m> [0;33mcol:9[0m [0;32m'const std::domain_error &'[0m
+
+Dumping __remaining:
+[0;1;32mVarDecl[0m[0;33m 0x6dddd08[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/streambuf.tcc:54:8[0m, [0;33mcol:45[0m> [0;33mcol:25[0m referenced[0;1;36m __remaining[0m [0;32m'const std::streamsize':'const long'[0m cinit
+[0;34m`-[0m[0;1;35mBinaryOperator[0m[0;33m 0x6dddde0[0m <[0;33mcol:39[0m, [0;33mcol:45[0m> [0;32m'long'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m  |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6ddddb0[0m <[0;33mcol:39[0m> [0;32m'std::streamsize':'long'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x6dddd70[0m <[0;33mcol:39[0m> [0;32m'std::streamsize':'long'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x6ddd7c0[0m[0;1;36m '__n'[0m [0;32m'std::streamsize':'long'[0m
+[0;34m  `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6ddddc8[0m <[0;33mcol:45[0m> [0;32m'std::streamsize':'long'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x6dddd90[0m <[0;33mcol:45[0m> [0;32m'std::streamsize':'long'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6ddd958[0m[0;1;36m '__ret'[0m [0;32m'std::streamsize':'long'[0m
+
+Dumping __remaining:
+[0;1;32mVarDecl[0m[0;33m 0x6ddf868[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/streambuf.tcc:88:8[0m, [0;33mcol:45[0m> [0;33mcol:25[0m referenced[0;1;36m __remaining[0m [0;32m'const std::streamsize':'const long'[0m cinit
+[0;34m`-[0m[0;1;35mBinaryOperator[0m[0;33m 0x6ddf940[0m <[0;33mcol:39[0m, [0;33mcol:45[0m> [0;32m'long'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m  |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6ddf910[0m <[0;33mcol:39[0m> [0;32m'std::streamsize':'long'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x6ddf8d0[0m <[0;33mcol:39[0m> [0;32m'std::streamsize':'long'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x6ddf320[0m[0;1;36m '__n'[0m [0;32m'std::streamsize':'long'[0m
+[0;34m  `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6ddf928[0m <[0;33mcol:45[0m> [0;32m'std::streamsize':'long'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x6ddf8f0[0m <[0;33mcol:45[0m> [0;32m'std::streamsize':'long'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6ddf4b8[0m[0;1;36m '__ret'[0m [0;32m'std::streamsize':'long'[0m
+
+Dumping __remainder:
+[0;1;32mVarDecl[0m[0;33m 0x7377560[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_algo.h:297:7[0m, [0;33mcol:35[0m> [0;33mcol:21[0m referenced[0;1;36m __remainder[0m [0;32m'_DistanceType':'typename std::iterator_traits<_RandomAccessIter>::difference_type'[0m cinit
+[0;34m`-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x73775c8[0m <[0;33mcol:35[0m> [0;32m'_Integer'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7376e40[0m[0;1;36m '__count'[0m [0;32m'_Integer'[0m
+
+Dumping remainder:
+[0;1;32mFunctionDecl[0m[0;33m 0x743a138[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:13[0m[0;1;36m remainder[0m [0;32m'double (double, double) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x743a010[0m <[0;33m/usr/include/math.h:285:20[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'double'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x743a090[0m <[0;33m/usr/include/math.h:285:20[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'double'[0m
+[0;34m`-[0m[0;1;34mNoThrowAttr[0m[0;33m 0x743a1e8[0m <[0;33mcol:13[0m> Implicit
+
+Dumping __remainder:
+[0;1;32mFunctionDecl[0m[0;33m 0x743a368[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:155:1[0m[0;1;36m __remainder[0m [0;32m'double (double, double) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x743a240[0m <[0;33m/usr/include/math.h:285:20[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x743a2c0[0m <[0;33m/usr/include/math.h:285:20[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'double'[0m
+
+Dumping remainderf:
+[0;1;32mFunctionDecl[0m[0;33m 0x7470d08[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:374:1[0m[0;1;36m remainderf[0m [0;32m'float (float, float) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7470be0[0m <[0;33m/usr/include/math.h:302:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'float'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7470c60[0m <[0;33m/usr/include/math.h:302:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'float'[0m
+[0;34m`-[0m[0;1;34mNoThrowAttr[0m[0;33m 0x7470db8[0m <[0;33m<scratch space>:374:1[0m> Implicit
+
+Dumping __remainderf:
+[0;1;32mFunctionDecl[0m[0;33m 0x7470f38[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:376:1[0m[0;1;36m __remainderf[0m [0;32m'float (float, float) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7470e10[0m <[0;33m/usr/include/math.h:302:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'float'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7470e90[0m <[0;33m/usr/include/math.h:302:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'float'[0m
+
+Dumping remainderl:
+[0;1;32mFunctionDecl[0m[0;33m 0x74b92a8[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:243:1[0m[0;1;36m remainderl[0m [0;32m'long double (long double, long double) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x74b9180[0m <[0;33m/usr/include/math.h:344:22[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'long double'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x74b9200[0m <[0;33m/usr/include/math.h:344:22[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'long double'[0m
+[0;34m`-[0m[0;1;34mNoThrowAttr[0m[0;33m 0x74b9358[0m <[0;33m<scratch space>:243:1[0m> Implicit
+
+Dumping __remainderl:
+[0;1;32mFunctionDecl[0m[0;33m 0x74b94d8[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:245:1[0m[0;1;36m __remainderl[0m [0;32m'long double (long double, long double) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x74b93b0[0m <[0;33m/usr/include/math.h:344:22[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'long double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x74b9430[0m <[0;33m/usr/include/math.h:344:22[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'long double'[0m
+
+Dumping remainderf32:
+[0;1;32mFunctionDecl[0m[0;33m 0x7506478[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:98:1[0m[0;1;36m remainderf32[0m [0;32m'_Float32 (_Float32, _Float32) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7506360[0m <[0;33m/usr/include/math.h:381:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float32':'float'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75063d8[0m <[0;33m/usr/include/math.h:381:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float32':'float'[0m
+
+Dumping __remainderf32:
+[0;1;32mFunctionDecl[0m[0;33m 0x7506650[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:100:1[0m[0;1;36m __remainderf32[0m [0;32m'_Float32 (_Float32, _Float32) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7506538[0m <[0;33m/usr/include/math.h:381:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float32':'float'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75065b0[0m <[0;33m/usr/include/math.h:381:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float32':'float'[0m
+
+Dumping remainderf64:
+[0;1;32mFunctionDecl[0m[0;33m 0x7533f18[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:350:1[0m[0;1;36m remainderf64[0m [0;32m'_Float64 (_Float64, _Float64) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7533e00[0m <[0;33m/usr/include/math.h:398:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float64':'double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7533e78[0m <[0;33m/usr/include/math.h:398:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float64':'double'[0m
+
+Dumping __remainderf64:
+[0;1;32mFunctionDecl[0m[0;33m 0x75340f0[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:352:1[0m[0;1;36m __remainderf64[0m [0;32m'_Float64 (_Float64, _Float64) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7533fd8[0m <[0;33m/usr/include/math.h:398:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float64':'double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7534050[0m <[0;33m/usr/include/math.h:398:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float64':'double'[0m
+
+Dumping remainderf32x:
+[0;1;32mFunctionDecl[0m[0;33m 0x756a908[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:230:1[0m[0;1;36m remainderf32x[0m [0;32m'_Float32x (_Float32x, _Float32x) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x756a7f0[0m <[0;33m/usr/include/math.h:432:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float32x':'double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x756a868[0m <[0;33m/usr/include/math.h:432:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float32x':'double'[0m
+
+Dumping __remainderf32x:
+[0;1;32mFunctionDecl[0m[0;33m 0x756aae0[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:232:1[0m[0;1;36m __remainderf32x[0m [0;32m'_Float32x (_Float32x, _Float32x) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x756a9c8[0m <[0;33m/usr/include/math.h:432:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float32x':'double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x756aa40[0m <[0;33m/usr/include/math.h:432:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float32x':'double'[0m
+
+Dumping remainderf64x:
+[0;1;32mFunctionDecl[0m[0;33m 0x7583538[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:138:1[0m[0;1;36m remainderf64x[0m [0;32m'_Float64x (_Float64x, _Float64x) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7583420[0m <[0;33m/usr/include/math.h:449:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float64x':'long double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7583498[0m <[0;33m/usr/include/math.h:449:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float64x':'long double'[0m
+
+Dumping __remainderf64x:
+[0;1;32mFunctionDecl[0m[0;33m 0x7583710[0m <[0;33m/usr/include/math.h:283:3[0m, [0;33m/usr/include/x86_64-linux-gnu/sys/cdefs.h:61:27[0m> [0;33m<scratch space>:140:1[0m[0;1;36m __remainderf64x[0m [0;32m'_Float64x (_Float64x, _Float64x) throw()'[0m extern
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75835f8[0m <[0;33m/usr/include/math.h:449:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:36[0m> [0;33mcol:36[0m[0;1;36m __x[0m [0;32m'_Float64x':'long double'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7583670[0m <[0;33m/usr/include/math.h:449:21[0m, [0;33m/usr/include/x86_64-linux-gnu/bits/mathcalls.h:272:51[0m> [0;33mcol:51[0m[0;1;36m __y[0m [0;32m'_Float64x':'long double'[0m
+
+Dumping std::remainder:
+[0;1;32mUsingDecl[0m[0;33m 0x75d2178[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1194:3[0m, [0;33mcol:11[0m> [0;33mcol:11[0m ::remainder
+
+Dumping std::remainder:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x75d21d0[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1194:11[0m> [0;33mcol:11[0m implicit [0;1;32mFunction[0m[0;33m 0x743a138[0m[0;1;36m 'remainder'[0m [0;32m'double (double, double) throw()'[0m
+
+Dumping std::remainderf:
+[0;1;32mUsingDecl[0m[0;33m 0x75d2228[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1195:3[0m, [0;33mcol:11[0m> [0;33mcol:11[0m ::remainderf
+
+Dumping std::remainderf:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x75d2280[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1195:11[0m> [0;33mcol:11[0m implicit [0;1;32mFunction[0m[0;33m 0x7470d08[0m[0;1;36m 'remainderf'[0m [0;32m'float (float, float) throw()'[0m
+
+Dumping std::remainderl:
+[0;1;32mUsingDecl[0m[0;33m 0x75d22d8[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1196:3[0m, [0;33mcol:11[0m> [0;33mcol:11[0m ::remainderl
+
+Dumping std::remainderl:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x75d2330[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1196:11[0m> [0;33mcol:11[0m implicit [0;1;32mFunction[0m[0;33m 0x74b92a8[0m[0;1;36m 'remainderl'[0m [0;32m'long double (long double, long double) throw()'[0m
+
+Dumping std::remainder:
+[0;1;32mFunctionDecl[0m[0;33m 0x75f5400[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1712:3[0m, [0;33mline:1714:44[0m> [0;33mline:1713:3[0m constexpr[0;1;36m remainder[0m [0;32m'float (float, float)'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f52e0[0m <[0;33mcol:13[0m, [0;33mcol:19[0m> [0;33mcol:19[0m used[0;1;36m __x[0m [0;32m'float'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f5360[0m <[0;33mcol:24[0m, [0;33mcol:30[0m> [0;33mcol:30[0m used[0;1;36m __y[0m [0;32m'float'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x75f57a8[0m <[0;33mline:1714:3[0m, [0;33mcol:44[0m>
+[0;34m  `-[0m[0;1;35mReturnStmt[0m[0;33m 0x75f5798[0m <[0;33mcol:5[0m, [0;33mcol:41[0m>
+[0;34m    `-[0m[0;1;35mCallExpr[0m[0;33m 0x75f5738[0m <[0;33mcol:12[0m, [0;33mcol:41[0m> [0;32m'float'[0m[0;36m[0m[0;36m[0m
+[0;34m      |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5720[0m <[0;33mcol:12[0m> [0;32m'float (*)(float, float) noexcept'[0m[0;36m[0m[0;36m[0m <[0;31mBuiltinFnToFnPtr[0m>
+[0;34m      | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f56c0[0m <[0;33mcol:12[0m> [0;32m'<builtin fn type>'[0m[0;36m[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x75f5500[0m[0;1;36m '__builtin_remainderf'[0m [0;32m'float (float, float) noexcept'[0m
+[0;34m      |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5768[0m <[0;33mcol:33[0m> [0;32m'float'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f56e0[0m <[0;33mcol:33[0m> [0;32m'float'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f52e0[0m[0;1;36m '__x'[0m [0;32m'float'[0m
+[0;34m      `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5780[0m <[0;33mcol:38[0m> [0;32m'float'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m        `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f5700[0m <[0;33mcol:38[0m> [0;32m'float'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f5360[0m[0;1;36m '__y'[0m [0;32m'float'[0m
+
+Dumping std::remainder:
+[0;1;32mFunctionDecl[0m[0;33m 0x75f58f8[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1716:3[0m, [0;33mline:1718:44[0m> [0;33mline:1717:3[0m constexpr[0;1;36m remainder[0m [0;32m'long double (long double, long double)'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f57d8[0m <[0;33mcol:13[0m, [0;33mcol:25[0m> [0;33mcol:25[0m used[0;1;36m __x[0m [0;32m'long double'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f5858[0m <[0;33mcol:30[0m, [0;33mcol:42[0m> [0;33mcol:42[0m used[0;1;36m __y[0m [0;32m'long double'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x75f5ca0[0m <[0;33mline:1718:3[0m, [0;33mcol:44[0m>
+[0;34m  `-[0m[0;1;35mReturnStmt[0m[0;33m 0x75f5c90[0m <[0;33mcol:5[0m, [0;33mcol:41[0m>
+[0;34m    `-[0m[0;1;35mCallExpr[0m[0;33m 0x75f5c30[0m <[0;33mcol:12[0m, [0;33mcol:41[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m
+[0;34m      |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5c18[0m <[0;33mcol:12[0m> [0;32m'long double (*)(long double, long double) noexcept'[0m[0;36m[0m[0;36m[0m <[0;31mBuiltinFnToFnPtr[0m>
+[0;34m      | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f5bb8[0m <[0;33mcol:12[0m> [0;32m'<builtin fn type>'[0m[0;36m[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x75f59f8[0m[0;1;36m '__builtin_remainderl'[0m [0;32m'long double (long double, long double) noexcept'[0m
+[0;34m      |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5c60[0m <[0;33mcol:33[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f5bd8[0m <[0;33mcol:33[0m> [0;32m'long double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f57d8[0m[0;1;36m '__x'[0m [0;32m'long double'[0m
+[0;34m      `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x75f5c78[0m <[0;33mcol:38[0m> [0;32m'long double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m        `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f5bf8[0m <[0;33mcol:38[0m> [0;32m'long double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f5858[0m[0;1;36m '__y'[0m [0;32m'long double'[0m
+
+Dumping std::remainder:
+[0;1;32mFunctionTemplateDecl[0m[0;33m 0x75f6508[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cmath:1722:3[0m, [0;33mline:1728:5[0m> [0;33mline:1724:5[0m[0;1;36m remainder[0m
+[0;34m|-[0m[0;1;32mTemplateTypeParmDecl[0m[0;33m 0x75f5cb8[0m <[0;33mline:1722:12[0m, [0;33mcol:21[0m> [0;33mcol:21[0m referenced typename depth 0 index 0[0;1;36m _Tp[0m
+[0;34m|-[0m[0;1;32mTemplateTypeParmDecl[0m[0;33m 0x75f5d28[0m <[0;33mcol:26[0m, [0;33mcol:35[0m> [0;33mcol:35[0m referenced typename depth 0 index 1[0;1;36m _Up[0m
+[0;34m`-[0m[0;1;32mFunctionDecl[0m[0;33m 0x75f6468[0m <[0;33mline:1723:5[0m, [0;33mline:1728:5[0m> [0;33mline:1724:5[0m constexpr[0;1;36m remainder[0m [0;32m'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type (_Tp, _Up)'[0m
+[0;34m  |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f6310[0m <[0;33mcol:15[0m, [0;33mcol:19[0m> [0;33mcol:19[0m referenced[0;1;36m __x[0m [0;32m'_Tp'[0m
+[0;34m  |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x75f6388[0m <[0;33mcol:24[0m, [0;33mcol:28[0m> [0;33mcol:28[0m referenced[0;1;36m __y[0m [0;32m'_Up'[0m
+[0;34m  `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x75f6cb0[0m <[0;33mline:1725:5[0m, [0;33mline:1728:5[0m>
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x75f6b28[0m <[0;33mline:1726:7[0m, [0;33mcol:71[0m>
+[0;34m    | `-[0m[0;1;32mTypedefDecl[0m[0;33m 0x75f6ad0[0m <[0;33mcol:7[0m, [0;33mcol:65[0m> [0;33mcol:65[0m referenced[0;1;36m __type[0m [0;32m'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m
+[0;34m    |   `-[0m[0;32mDependentNameType[0m[0;33m 0x75f6a60[0m [0;32m'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m dependent
+[0;34m    `-[0m[0;1;35mReturnStmt[0m[0;33m 0x75f6ca0[0m <[0;33mline:1727:7[0m, [0;33mcol:48[0m>
+[0;34m      `-[0m[0;1;35mCallExpr[0m[0;33m 0x75f6c70[0m <[0;33mcol:14[0m, [0;33mcol:48[0m> [0;32m'<dependent type>'[0m[0;36m[0m[0;36m[0m
+[0;34m        |-[0m[0;1;35mUnresolvedLookupExpr[0m[0;33m 0x75f6b40[0m <[0;33mcol:14[0m> [0;32m'<overloaded function type>'[0m[0;36m lvalue[0m[0;36m[0m (ADL) = 'remainder'[0;33m 0x75f6508[0m[0;33m 0x75f58f8[0m[0;33m 0x75f5400[0m[0;33m 0x75d21d0[0m
+[0;34m        |-[0m[0;1;35mCXXUnresolvedConstructExpr[0m[0;33m 0x75f6bf0[0m <[0;33mcol:24[0m, [0;33mcol:34[0m> [0;32m'__type':'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m[0;36m[0m[0;36m[0m [0;32m'__type':'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m
+[0;34m        | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f6bd0[0m <[0;33mcol:31[0m> [0;32m'_Tp'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f6310[0m[0;1;36m '__x'[0m [0;32m'_Tp'[0m
+[0;34m        `-[0m[0;1;35mCXXUnresolvedConstructExpr[0m[0;33m 0x75f6c48[0m <[0;33mcol:37[0m, [0;33mcol:47[0m> [0;32m'__type':'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m[0;36m[0m[0;36m[0m [0;32m'__type':'typename __gnu_cxx::__promote_2<_Tp, _Up>::__type'[0m
+[0;34m          `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x75f6c28[0m <[0;33mcol:44[0m> [0;32m'_Up'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x75f6388[0m[0;1;36m '__y'[0m [0;32m'_Up'[0m
+
+Dumping remainder:
+[0;1;32mUsingDecl[0m[0;33m 0x76095d8[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/math.h:104:1[0m, [0;33mcol:12[0m> [0;33mcol:12[0m std::remainder
+
+Dumping remainder:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x7609630[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/math.h:104:12[0m> [0;33mcol:12[0m implicit [0;1;32mFunction[0m[0;33m 0x743a138[0m[0;1;36m 'remainder'[0m [0;32m'double (double, double) throw()'[0m
+
+Dumping remainder:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x7609680[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/math.h:104:12[0m> [0;33mcol:12[0m implicit [0;1;32mFunction[0m[0;33m 0x75f5400[0m[0;1;36m 'remainder'[0m [0;32m'float (float, float)'[0m
+
+Dumping remainder:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x76096d0[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/math.h:104:12[0m> [0;33mcol:12[0m implicit [0;1;32mFunction[0m[0;33m 0x75f58f8[0m[0;1;36m 'remainder'[0m [0;32m'long double (long double, long double)'[0m
+
+Dumping remainder:
+[0;1;32mUsingShadowDecl[0m[0;33m 0x7609720[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/math.h:104:12[0m> [0;33mcol:12[0m implicit [0;1;32mFunctionTemplate[0m[0;33m 0x75f6508[0m[0;1;36m 'remainder'[0m
+
+Dumping __remainder:
+[0;1;32mVarDecl[0m[0;33m 0x7823500[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/fstream.tcc:339:8[0m, [0;33mcol:52[0m> [0;33mcol:25[0m referenced[0;1;36m __remainder[0m [0;32m'const std::streamsize':'const long'[0m cinit
+[0;34m`-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x7823650[0m <[0;33mcol:39[0m, [0;33mcol:52[0m> [0;32m'<dependent type>'[0m[0;36m[0m[0;36m[0m
+[0;34m  |-[0m[0;1;35mUnresolvedLookupExpr[0m[0;33m 0x78235e8[0m <[0;33mcol:50[0m> [0;32m'<overloaded function type>'[0m[0;36m lvalue[0m[0;36m[0m (ADL) = 'operator-'[0;33m 0x6896c38[0m[0;33m 0x68b8548[0m[0;33m 0x712f1d0[0m[0;33m 0x7130610[0m[0;33m 0x71f3ce8[0m
+[0;34m  |-[0m[0;1;35mMemberExpr[0m[0;33m 0x7823578[0m <[0;33mcol:39[0m> [0;32m'char *'[0m[0;36m lvalue[0m[0;36m[0m ->_M_ext_end[0;33m 0x77f81d0[0m
+[0;34m  | `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x7823568[0m <[0;33mcol:39[0m> [0;32m'basic_filebuf<_CharT, _Traits> *'[0m[0;36m[0m[0;36m[0m implicit this
+[0;34m  `-[0m[0;1;35mMemberExpr[0m[0;33m 0x78235b8[0m <[0;33mcol:52[0m> [0;32m'const char *'[0m[0;36m lvalue[0m[0;36m[0m ->_M_ext_next[0;33m 0x77f8168[0m
+[0;34m    `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x78235a8[0m <[0;33mcol:52[0m> [0;32m'basic_filebuf<_CharT, _Traits> *'[0m[0;36m[0m[0;36m[0m implicit this
+
+Dumping __remainder:
+[0;1;32mVarDecl[0m[0;33m 0x7842a90[0m <[0;33m/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/fstream.tcc:1029:9[0m, [0;33mcol:53[0m> [0;33mcol:26[0m referenced[0;1;36m __remainder[0m [0;32m'const std::streamsize':'const long'[0m cinit
+[0;34m`-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x7842be0[0m <[0;33mcol:40[0m, [0;33mcol:53[0m> [0;32m'<dependent type>'[0m[0;36m[0m[0;36m[0m
+[0;34m  |-[0m[0;1;35mUnresolvedLookupExpr[0m[0;33m 0x7842b78[0m <[0;33mcol:51[0m> [0;32m'<overloaded function type>'[0m[0;36m lvalue[0m[0;36m[0m (ADL) = 'operator-'[0;33m 0x6896c38[0m[0;33m 0x68b8548[0m[0;33m 0x712f1d0[0m[0;33m 0x7130610[0m[0;33m 0x71f3ce8[0m
+[0;34m  |-[0m[0;1;35mMemberExpr[0m[0;33m 0x7842b08[0m <[0;33mcol:40[0m> [0;32m'char *'[0m[0;36m lvalue[0m[0;36m[0m ->_M_ext_end[0;33m 0x77f81d0[0m
+[0;34m  | `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x7842af8[0m <[0;33mcol:40[0m> [0;32m'basic_filebuf<_CharT, _Traits> *'[0m[0;36m[0m[0;36m[0m implicit this
+[0;34m  `-[0m[0;1;35mMemberExpr[0m[0;33m 0x7842b48[0m <[0;33mcol:53[0m> [0;32m'const char *'[0m[0;36m lvalue[0m[0;36m[0m ->_M_ext_next[0;33m 0x77f8168[0m
+[0;34m    `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x7842b38[0m <[0;33mcol:53[0m> [0;32m'basic_filebuf<_CharT, _Traits> *'[0m[0;36m[0m[0;36m[0m implicit this
+
+Dumping main:
+[0;1;32mFunctionDecl[0m[0;33m 0x79e6c78[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang_GJam/data/Andrew.Makar/1836486_1485488_Andrew.Makar.cpp:171:1[0m, [0;33mline:184:1[0m> [0;33mline:171:5[0m[0;1;36m main[0m [0;32m'int ()'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x79fc0c0[0m <[0;33mcol:11[0m, [0;33mline:184:1[0m>
+[0;34m  |-[0m[0;1;35mCallExpr[0m[0;33m 0x79e6ed0[0m <[0;33mline:173:2[0m, [0;33mcol:31[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e6eb8[0m <[0;33mcol:2[0m> [0;32m'FILE *(*)(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e6e40[0m <[0;33mcol:2[0m> [0;32m'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6bc7708[0m[0;1;36m 'freopen'[0m [0;32m'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e6f08[0m <[0;33mcol:10[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79e6dd8[0m <[0;33mcol:10[0m> [0;32m'const char [10]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "input.txt"[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e6f20[0m <[0;33mcol:22[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79e6e00[0m <[0;33mcol:22[0m> [0;32m'const char [2]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "r"[0m
+[0;34m  | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e6f38[0m <[0;33m/usr/include/stdio.h:139:15[0m> [0;32m'struct _IO_FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e6e20[0m <[0;33mcol:15[0m> [0;32m'struct _IO_FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6bc5b80[0m[0;1;36m 'stdin'[0m [0;32m'struct _IO_FILE *'[0m
+[0;34m  |-[0m[0;1;35mCallExpr[0m[0;33m 0x79e70b8[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang_GJam/data/Andrew.Makar/1836486_1485488_Andrew.Makar.cpp:174:2[0m, [0;33mcol:33[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e70a0[0m <[0;33mcol:2[0m> [0;32m'FILE *(*)(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e7080[0m <[0;33mcol:2[0m> [0;32m'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6bc7708[0m[0;1;36m 'freopen'[0m [0;32m'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)'[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e70f0[0m <[0;33mcol:10[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79e7018[0m <[0;33mcol:10[0m> [0;32m'const char [11]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "output.txt"[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e7108[0m <[0;33mcol:23[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79e7040[0m <[0;33mcol:23[0m> [0;32m'const char [2]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "w"[0m
+[0;34m  | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e7120[0m <[0;33m/usr/include/stdio.h:140:16[0m> [0;32m'struct _IO_FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e7060[0m <[0;33mcol:16[0m> [0;32m'struct _IO_FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6bc5c10[0m[0;1;36m 'stdout'[0m [0;32m'struct _IO_FILE *'[0m
+[0;34m  |-[0m[0;1;35mDeclStmt[0m[0;33m 0x79e71b8[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang_GJam/data/Andrew.Makar/1836486_1485488_Andrew.Makar.cpp:176:2[0m, [0;33mcol:8[0m>
+[0;34m  | `-[0m[0;1;32mVarDecl[0m[0;33m 0x79e7150[0m <[0;33mcol:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m used[0;1;36m tt[0m [0;32m'int'[0m
+[0;34m  |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79e8b20[0m <[0;33mline:177:2[0m, [0;33mcol:7[0m> [0;32m'std::basic_istream<char, std::char_traits<char> >::__istream_type':'std::basic_istream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m  | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e8b08[0m <[0;33mcol:5[0m> [0;32m'std::basic_istream<char, std::char_traits<char> >::__istream_type &(*)(int &)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m  | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e8a90[0m <[0;33mcol:5[0m> [0;32m'std::basic_istream<char, std::char_traits<char> >::__istream_type &(int &)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x6f2c558[0m[0;1;36m 'operator>>'[0m [0;32m'std::basic_istream<char, std::char_traits<char> >::__istream_type &(int &)'[0m
+[0;34m  | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e71d0[0m <[0;33mcol:2[0m> [0;32m'std::istream':'std::basic_istream<char>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6fa9038[0m[0;1;36m 'cin'[0m [0;32m'std::istream':'std::basic_istream<char>'[0m
+[0;34m  | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e71f0[0m <[0;33mcol:7[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e7150[0m[0;1;36m 'tt'[0m [0;32m'int'[0m
+[0;34m  `-[0m[0;1;35mForStmt[0m[0;33m 0x79fc088[0m <[0;33mline:178:2[0m, [0;33mline:182:2[0m>
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x79e8bf8[0m <[0;33mline:178:7[0m, [0;33mcol:14[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x79e8b70[0m <[0;33mcol:7[0m, [0;33mcol:13[0m> [0;33mcol:11[0m used[0;1;36m t[0m [0;32m'int'[0m cinit
+[0;34m    |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x79e8bd8[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |-[0m[0;34m<<<NULL>>>[0m
+[0;34m    |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x79e8c80[0m <[0;33mcol:16[0m, [0;33mcol:19[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '<='
+[0;34m    | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e8c50[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e8c10[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e8b70[0m[0;1;36m 't'[0m [0;32m'int'[0m
+[0;34m    | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79e8c68[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e8c30[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e7150[0m[0;1;36m 'tt'[0m [0;32m'int'[0m
+[0;34m    |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x79e8cc0[0m <[0;33mcol:23[0m, [0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m    | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e8ca0[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e8b70[0m[0;1;36m 't'[0m [0;32m'int'[0m
+[0;34m    `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x79fc060[0m <[0;33mcol:27[0m, [0;33mline:182:2[0m>
+[0;34m      |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79f86e0[0m <[0;33mline:179:3[0m, [0;33mcol:22[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f86c8[0m <[0;33mcol:20[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f8648[0m <[0;33mcol:20[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x6f06c48[0m[0;1;36m 'operator<<'[0m [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'[0m
+[0;34m      | |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79f7ca0[0m <[0;33mcol:3[0m, [0;33mcol:19[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f7c88[0m <[0;33mcol:17[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(int)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f7c10[0m <[0;33mcol:17[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x6f07ba8[0m[0;1;36m 'operator<<'[0m [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'[0m
+[0;34m      | | |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79f5fd0[0m <[0;33mcol:3[0m, [0;33mcol:9[0m> [0;32m'basic_ostream<char, std::char_traits<char> >':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f5fb8[0m <[0;33mcol:7[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f5f38[0m <[0;33mcol:7[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6f101e8[0m[0;1;36m 'operator<<'[0m [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m
+[0;34m      | | | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79e8cd8[0m <[0;33mcol:3[0m> [0;32m'std::ostream':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6fa9128[0m[0;1;36m 'cerr'[0m [0;32m'std::ostream':'std::basic_ostream<char>'[0m
+[0;34m      | | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f5f20[0m <[0;33mcol:9[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m      | | |   `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79e8cf8[0m <[0;33mcol:9[0m> [0;32m'const char [7]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "Case #"[0m
+[0;34m      | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f7bf8[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f6008[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e8b70[0m[0;1;36m 't'[0m [0;32m'int'[0m
+[0;34m      | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f8630[0m <[0;33mcol:22[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f8608[0m <[0;33mcol:22[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6f0b328[0m[0;1;36m 'endl'[0m [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)'[0m ([0;1;32mFunctionTemplate[0m[0;33m 0x6ee8e48[0m[0;1;36m 'endl'[0m)
+[0;34m      |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79fbf88[0m <[0;33mline:180:3[0m, [0;33mcol:22[0m> [0;32m'basic_ostream<char, std::char_traits<char> >':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79fbf70[0m <[0;33mcol:20[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79fbf50[0m <[0;33mcol:20[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6f101e8[0m[0;1;36m 'operator<<'[0m [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m
+[0;34m      | |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79fa2f8[0m <[0;33mcol:3[0m, [0;33mcol:19[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79fa2e0[0m <[0;33mcol:17[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(int)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79fa2c0[0m <[0;33mcol:17[0m> [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mCXXMethod[0m[0;33m 0x6f07ba8[0m[0;1;36m 'operator<<'[0m [0;32m'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'[0m
+[0;34m      | | |-[0m[0;1;35mCXXOperatorCallExpr[0m[0;33m 0x79f94e8[0m <[0;33mcol:3[0m, [0;33mcol:9[0m> [0;32m'basic_ostream<char, std::char_traits<char> >':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m      | | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f94d0[0m <[0;33mcol:7[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m      | | | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f94b0[0m <[0;33mcol:7[0m> [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x6f101e8[0m[0;1;36m 'operator<<'[0m [0;32m'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &, const char *)'[0m
+[0;34m      | | | |-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f8718[0m <[0;33mcol:3[0m> [0;32m'std::ostream':'std::basic_ostream<char>'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x6fa90b0[0m[0;1;36m 'cout'[0m [0;32m'std::ostream':'std::basic_ostream<char>'[0m
+[0;34m      | | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79f9498[0m <[0;33mcol:9[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m      | | |   `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79f8738[0m <[0;33mcol:9[0m> [0;32m'const char [7]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "Case #"[0m
+[0;34m      | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79fa2a8[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79f9520[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x79e8b70[0m[0;1;36m 't'[0m [0;32m'int'[0m
+[0;34m      | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79fbf38[0m <[0;33mcol:22[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m      |   `-[0m[0;1;35mStringLiteral[0m[0;33m 0x79fa330[0m <[0;33mcol:22[0m> [0;32m'const char [3]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m ": "[0m
+[0;34m      `-[0m[0;1;35mCallExpr[0m[0;33m 0x79fc040[0m <[0;33mline:181:3[0m, [0;33mcol:9[0m> [0;32m'void'[0m[0;36m[0m[0;36m[0m
+[0;34m        `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x79fc028[0m <[0;33mcol:3[0m> [0;32m'void (*)()'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m          `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x79fc008[0m <[0;33mcol:3[0m> [0;32m'void ()'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x79de708[0m[0;1;36m 'solve'[0m [0;32m'void ()'[0m
+

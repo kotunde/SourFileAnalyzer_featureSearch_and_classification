@@ -1,0 +1,59 @@
+Dumping Account::getBalance:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x4fd3550[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.h:7:5[0m, [0;33mcol:25[0m> [0;33mcol:12[0m[0;1;36m getBalance[0m [0;32m'double () const'[0m
+
+Dumping Account::getBalance:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x5000260[0m parent 0x4fd3130 prev 0x4fd3550 <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.cpp:7:1[0m, [0;33mline:9:1[0m> [0;33mline:7:17[0m[0;1;36m getBalance[0m [0;32m'double () const'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x50003b0[0m <[0;33mcol:35[0m, [0;33mline:9:1[0m>
+[0;34m  `-[0m[0;1;35mReturnStmt[0m[0;33m 0x50003a0[0m <[0;33mline:8:5[0m, [0;33mcol:18[0m>
+[0;34m    `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x5000388[0m <[0;33mcol:12[0m, [0;33mcol:18[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      `-[0m[0;1;35mMemberExpr[0m[0;33m 0x5000358[0m <[0;33mcol:12[0m, [0;33mcol:18[0m> [0;32m'const double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x4fd3900[0m
+[0;34m        `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x5000348[0m <[0;33mcol:12[0m> [0;32m'const Account *'[0m[0;36m[0m[0;36m[0m this
+
+Dumping Account::deposit:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x6333698[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.h:8:5[0m, [0;33mcol:31[0m> [0;33mcol:10[0m[0;1;36m deposit[0m [0;32m'void (double)'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6333608[0m <[0;33mcol:18[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m amount[0m [0;32m'double'[0m
+
+Dumping Account::deposit:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x6360478[0m parent 0x6333130 prev 0x6333698 <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.cpp:11:1[0m, [0;33mline:13:1[0m> [0;33mline:11:15[0m[0;1;36m deposit[0m [0;32m'void (double)'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x63603e8[0m <[0;33mcol:23[0m, [0;33mcol:30[0m> [0;33mcol:30[0m used[0;1;36m amount[0m [0;32m'double'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x6360678[0m <[0;33mcol:37[0m, [0;33mline:13:1[0m>
+[0;34m  `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x6360658[0m <[0;33mline:12:5[0m, [0;33mcol:37[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m    |-[0m[0;1;35mMemberExpr[0m[0;33m 0x6360578[0m <[0;33mcol:5[0m, [0;33mcol:11[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x6333900[0m
+[0;34m    | `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x6360568[0m <[0;33mcol:5[0m> [0;32m'Account *'[0m[0;36m[0m[0;36m[0m this
+[0;34m    `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x6360638[0m <[0;33mcol:21[0m, [0;33mcol:37[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '+'
+[0;34m      |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6360608[0m <[0;33mcol:21[0m, [0;33mcol:27[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x63605b8[0m <[0;33mcol:21[0m, [0;33mcol:27[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x6333900[0m
+[0;34m      |   `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x63605a8[0m <[0;33mcol:21[0m> [0;32m'Account *'[0m[0;36m[0m[0;36m[0m this
+[0;34m      `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x6360620[0m <[0;33mcol:37[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m        `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x63605e8[0m <[0;33mcol:37[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x63603e8[0m[0;1;36m 'amount'[0m [0;32m'double'[0m
+
+Dumping Account::withdraw:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x6383818[0m <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.h:9:5[0m, [0;33mcol:32[0m> [0;33mcol:10[0m[0;1;36m withdraw[0m [0;32m'bool (double)'[0m
+[0;34m`-[0m[0;1;32mParmVarDecl[0m[0;33m 0x6383758[0m <[0;33mcol:19[0m, [0;33mcol:26[0m> [0;33mcol:26[0m[0;1;36m amount[0m [0;32m'double'[0m
+
+Dumping Account::withdraw:
+[0;1;32mCXXMethodDecl[0m[0;33m 0x63b0740[0m parent 0x6383130 prev 0x6383818 <[0;33m/home/tunde/Linux/Documents/Projekt/Part_II/Clang/Data/user1/labor8/feladat1/Account.cpp:15:1[0m, [0;33mline:21:1[0m> [0;33mline:15:15[0m[0;1;36m withdraw[0m [0;32m'bool (double)'[0m
+[0;34m|-[0m[0;1;32mParmVarDecl[0m[0;33m 0x63b06b0[0m <[0;33mcol:24[0m, [0;33mcol:31[0m> [0;33mcol:31[0m used[0;1;36m amount[0m [0;32m'double'[0m
+[0;34m`-[0m[0;1;35mCompoundStmt[0m[0;33m 0x63b0a68[0m <[0;33mcol:38[0m, [0;33mline:21:1[0m>
+[0;34m  |-[0m[0;1;35mIfStmt[0m[0;33m 0x63b0a30[0m <[0;33mline:16:5[0m, [0;33mline:19:5[0m>
+[0;34m  | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x63b08c0[0m <[0;33mline:16:9[0m, [0;33mcol:26[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m '>='
+[0;34m  | | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x63b0890[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | | | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x63b0840[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x6383900[0m
+[0;34m  | | |   `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x63b0830[0m <[0;33mcol:9[0m> [0;32m'Account *'[0m[0;36m[0m[0;36m[0m this
+[0;34m  | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x63b08a8[0m <[0;33mcol:26[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  | |   `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x63b0870[0m <[0;33mcol:26[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x63b06b0[0m[0;1;36m 'amount'[0m [0;32m'double'[0m
+[0;34m  | `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x63b0a10[0m <[0;33mcol:33[0m, [0;33mline:19:5[0m>
+[0;34m  |   |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x63b09d0[0m <[0;33mline:17:9[0m, [0;33mcol:41[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m '='
+[0;34m  |   | |-[0m[0;1;35mMemberExpr[0m[0;33m 0x63b08f0[0m <[0;33mcol:9[0m, [0;33mcol:15[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x6383900[0m
+[0;34m  |   | | `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x63b08e0[0m <[0;33mcol:9[0m> [0;32m'Account *'[0m[0;36m[0m[0;36m[0m this
+[0;34m  |   | `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x63b09b0[0m <[0;33mcol:25[0m, [0;33mcol:41[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m '-'
+[0;34m  |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x63b0980[0m <[0;33mcol:25[0m, [0;33mcol:31[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |   | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x63b0930[0m <[0;33mcol:25[0m, [0;33mcol:31[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m ->balance[0;33m 0x6383900[0m
+[0;34m  |   |   |   `-[0m[0;1;35mCXXThisExpr[0m[0;33m 0x63b0920[0m <[0;33mcol:25[0m> [0;32m'Account *'[0m[0;36m[0m[0;36m[0m this
+[0;34m  |   |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x63b0998[0m <[0;33mcol:41[0m> [0;32m'double'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m  |   |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x63b0960[0m <[0;33mcol:41[0m> [0;32m'double'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x63b06b0[0m[0;1;36m 'amount'[0m [0;32m'double'[0m
+[0;34m  |   `-[0m[0;1;35mReturnStmt[0m[0;33m 0x63b0a00[0m <[0;33mline:18:9[0m, [0;33mcol:16[0m>
+[0;34m  |     `-[0m[0;1;35mCXXBoolLiteralExpr[0m[0;33m 0x63b09f0[0m <[0;33mcol:16[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m true
+[0;34m  `-[0m[0;1;35mReturnStmt[0m[0;33m 0x63b0a58[0m <[0;33mline:20:5[0m, [0;33mcol:12[0m>
+[0;34m    `-[0m[0;1;35mCXXBoolLiteralExpr[0m[0;33m 0x63b0a48[0m <[0;33mcol:12[0m> [0;32m'bool'[0m[0;36m[0m[0;36m[0m false
+
