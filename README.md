@@ -1,4 +1,4 @@
-# SourFileAnalyzer
+# SourceFileAnalyzer
 
 Source Code Authorship Attribution by extracting layout, lexical and syntactical features and classifying them.
 
