@@ -50,6 +50,7 @@ $ bash sapi_data_ast_func.sh Data Data_ast
 The script creates the ASTs by first extracting the function names from each sourcefile, then creating the AST for each function.
 
 Then run the script named [extractNodes.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_features/extractNodes.py) which extracts the nodes from the .ast files and writes the output into an ```extracted_ast_nodes.csv``` named file. Then run the next script in the AST_features folder, namely [normalizeAstOutputFile.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_features/normalizeAstOutputFile.py) which will normalize and match the output with the other .csv file (```LL_features.csv```). 
+Then repeat the process for the [extractBigrams.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_features/extractBigrams.py) file.
 
 #### Classification
 Run Python script to classify the result CSVs with Random Forest Classifier([rfc.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/Classification/rfc.py)).
