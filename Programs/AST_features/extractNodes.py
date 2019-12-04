@@ -208,7 +208,7 @@ def extract_features(filepath):
 def dumpDictionaryToCSV(data):
     index_counter = 1
     global PRINT_HEADER
-    csv_file = "test_data" + ".csv"
+    csv_file = "extracted_ast_nodes.csv"
     df=pd.DataFrame(data,index=[index_counter])
     if PRINT_HEADER:
         csv_columns = returnHeaders()
