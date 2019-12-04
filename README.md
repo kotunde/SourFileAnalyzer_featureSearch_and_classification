@@ -39,7 +39,6 @@ Now we have the layout and lexical feautres in test_data.csv file, where each co
 We have a bash script which is written for both of the datasets, since they differ in their directory structure ([gcj_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/gcj_data_ast_func.sh) , [sapi_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/sapi_data_ast_func.sh)). The script traverses the data directory (given as first parameter) by source files, and creates a second direcory (it's name given as second parameter) with the same directory structure, containing the .ast files with the same name as the respective source file.
 
 **Important!**
-
 In [createAstByFuncName.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/createAstByFuncName.py) set the path to installed ```clang-check```
 ```
 $ bash gcj_data_ast_func.sh Data Data_ast
@@ -56,3 +55,5 @@ Don't forget to set the directory path to the respective CSV file and format the
 ```
 $ python rfc.py
 ```
+#### Illustration
+To illustrate the output CSVs you can use the ```matplotlib.pyplot``` framework.
