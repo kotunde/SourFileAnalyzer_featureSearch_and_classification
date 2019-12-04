@@ -8,9 +8,9 @@ Source Code Authorship Attribution by extracting layout, lexical and syntactical
 - Classification with Python frameworks (```pandas```)
 
 ## Dataset
-Our dataset contains 9 C/C++ source file/100 user from the Google Code Jam 2015 programming competition [(GCJ_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/GCJ_Dataset/Data), and an average 27 C++ source file/14 user from Sapientia EMTE University [(Sapi_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/Sapi_Dataset/Data).
+Our dataset contains 9 C/C++ source files/100 user from the Google Code Jam 2015 programming competition [(GCJ_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/GCJ_Dataset/Data), and an average of 27 C++ source files/14 user from Sapientia EMTE University [(Sapi_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/Sapi_Dataset/Data).
 
-The main difference between the datasets is that the GCJ users were only given the task to solve, while Sapi users were given the header files too to work with. So the results are more remarkable at the GCJ dataset, since the Sapi codes were similar in structure.
+The main difference between the datasets is that the GCJ users were only given the task to solve, while Sapi users were given the header files too to work with. So the results are more remarkable in the GCJ dataset, since the Sapi codes were similar in structure.
 
 ## How it works
 
@@ -27,7 +27,7 @@ The following link may help with it ( [Setting up Clang](https://eli.thegreenpla
 
 ### Running
 #### Layout and Lexical features
-Run the first script to extract layout and lexical features into a CSV file: [extractAttributes.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/LL_features/extractAttributes.py).
+Run this script to extract layout and lexical features into a CSV file: [extractAttributes.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/LL_features/extractAttributes.py).
 
 Don't forget to set the directory path.
 ```
