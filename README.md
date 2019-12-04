@@ -17,7 +17,7 @@ The main difference between the datasets is that the GCJ users were only given t
 ### Prerequisites
 Install Python 3.x
 ```
-sudo apt install python3.7
+$ sudo apt install python3.7
 ```
 #### Set up Clang compiler
 The following link may help with it ( [Setting up Clang](https://eli.thegreenplace.net/2011/07/03/parsing-c-in-python-with-clang#documentation) ).
@@ -31,18 +31,18 @@ Run the first script to extract layout and lexical features into a CSV file: [ex
 
 Don't forget to set the directory path.
 ```
-python extractAttributes.py
+$ python extractAttributes.py
 ```
 Now we have the layout and lexical feautres in test_data.csv file, where each column is a feature, except the last, which is the "author", the class itself. Our results: [GCJ L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/GCJ_Dataset/CSV/GCJ_47.csv),  [Sapi L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Sapi_Dataset/CSV/SAPI_47.csv)
 
 #### Abstract Syntax Trees
 We have a bash script which is written for both of the datasets, since they differ in their directory structure ([gcj_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/gcj_data_ast_func.sh) , [sapi_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/sapi_data_ast_func.sh)). The script traverses the data directory (given as first parameter) by source files, and creates a second direcory (it's name given as second parameter) with the same directory structure, containing the .ast files with the same name as the respective source file.
 ```
-bash gcj_data_ast_func.sh Data Data_ast
+$ bash gcj_data_ast_func.sh Data Data_ast
 ```
 or
 ```
-bash sapi_data_ast_func.sh Data Data_ast
+$ bash sapi_data_ast_func.sh Data Data_ast
 ```
 The script creates the ASTs by first extracting the function names from each sourcefile, then creating the AST for each function.
 
@@ -50,5 +50,5 @@ The script creates the ASTs by first extracting the function names from each sou
 Run Python script to classify the result CSVs with Random Forest Classifier([rfc.py](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/Classification/rfc.py)).
 Don't forget to set the directory path to the respective CSV file and format the output CSV's header.
 ```
-python rfc.py
+$ python rfc.py
 ```
