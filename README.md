@@ -5,7 +5,7 @@ Source Code Authorship Attribution by extracting layout, lexical and syntactical
 ### Main steps
 - Layout and Lexical feature extraction with Python code
 - AST extraction with Clang compiler and output processing (done using Linux OS)
-- Classification with Python frameworks
+- Classification with Python frameworks (```pandas```)
 
 ## Dataset
 Our dataset contains 9 C/C++ source file/100 user from the Google Code Jam 2015 programming competition [(GCJ_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/GCJ_Dataset/Data), and an average 27 C++ source file/14 user from Sapientia EMTE University [(Sapi_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/Sapi_Dataset/Data).
@@ -33,7 +33,7 @@ Don't forget to set the directory path.
 ```
 $ python extractAttributes.py
 ```
-Now we have the layout and lexical feautres in test_data.csv file, where each column is a feature, except the last, which is the "author", the class itself. Our results: [GCJ L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/GCJ_Dataset/CSV/GCJ_47.csv),  [Sapi L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Sapi_Dataset/CSV/SAPI_47.csv)
+Now we have the layout and lexical feautres in LL_features.csv file, where each column is a feature, except the last, which is the "author", the class itself. Our results: [GCJ L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/GCJ_Dataset/CSV/GCJ_47.csv),  [Sapi L&L Features CSV](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Sapi_Dataset/CSV/SAPI_47.csv)
 
 #### Abstract Syntax Trees
 We have a bash script which is written for both of the datasets, since they differ in their directory structure ([gcj_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/gcj_data_ast_func.sh) , [sapi_data_ast_func.sh](https://github.com/kotunde/SourceFileAnalyzer_featureSearch_and_classification/blob/master/Programs/AST_extraction/sapi_data_ast_func.sh)). The script traverses the data directory (given as first parameter) by source files, and creates a second direcory (it's name given as second parameter) with the same directory structure, containing the .ast files with the same name as the respective source file.
