@@ -4,7 +4,7 @@ Source Code Authorship Attribution by extracting layout, lexical and syntactical
 
 ### Main steps
 - Layout and Lexical feature extraction with Python code
-- AST extraction with Clang compiler and output processing (solved on Linux OS)
+- AST extraction with Clang compiler and output processing (done using Linux OS)
 - Classification with Python frameworks
 
 ## Dataset
