@@ -5,7 +5,7 @@ Source Code Authorship Attribution by extracting layout, lexical and syntactical
 ### Main steps
 - Layout and Lexical feature extraction with Python code
 - AST extraction with Clang compiler and output processing (done using Linux OS)
-- Classification with Python frameworks (```pandas```)
+- Classification with Python frameworks:```sklearn``` (also used ``` pandas, numpy```)
 
 ## Dataset
 Our dataset contains 9 C/C++ source files/100 user from the Google Code Jam 2015 programming competition [(GCJ_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/GCJ_Dataset/Data), and an average of 27 C++ source files/14 user from Sapientia EMTE University [(Sapi_Dataset/Data)](https://github.com/kotunde/SourFileAnalyzer_featureSearch_and_classification/tree/master/Sapi_Dataset/Data).
