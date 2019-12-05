@@ -25,7 +25,7 @@ DIRSEPARATOR = '\\'
 
 # lists the searched features
 def returnFeaureList():
-    feat_list = {
+    feat_map = {
             'Empty Lines': 0,
             'Non-empty Lines': 0,
             'Average Line Length': 0,
@@ -75,7 +75,7 @@ def returnFeaureList():
             'Creation Order': 0,
             'Author': ""
         }
-    return feat_list
+    return feat_map
 
 
 # returns whether or not the line contains an stl library object
@@ -190,7 +190,7 @@ def check_readability(words):
         if en_is_readable or hu_is_readable:
             readable += 1
 
-    return readable / len(words)
+    return readable / len(words) if len(words) > 0 else 0
 
 
 def find_macro(line):
@@ -604,9 +604,9 @@ def initializeGlobals():
 # getting the features from file
 def extract_features(filepath, author, creation_order, csv_flag):
     initializeGlobals()
-    feature_list = returnFeaureList()
-    feature_list['Author'] = author
-    feature_list['Creation Order'] = creation_order
+    feature_map = returnFeaureList()
+    feature_map['Author'] = author
+    feature_map['Creation Order'] = creation_order
 
     sum_line_length = 0
     line_lengths = []
@@ -643,32 +643,32 @@ def extract_features(filepath, author, creation_order, csv_flag):
                 process_function_row(line)
 
             if structs or classes:
-                feature_list['Custom Types'] = 1
-            feature_list['Chars'] += charsCurrentLine
-            feature_list['IF Keywords'] += searchKeywordsInLine(line, r'^.*\b(if)\b.*$')
-            feature_list['ELSE Keywords'] += searchKeywordsInLine(line, r'^.*\b(else)\b.*$')
-            feature_list['FOR Keywords'] += searchKeywordsInLine(line, r'^.*\b(for)\b.*$')
-            feature_list['WHILE Keywords'] += searchKeywordsInLine(line, r'^.*\b(while)\b.*$')
-            feature_list['SWITCH Keywords'] += searchKeywordsInLine(line, r'^.*\b(switch)\b.*$')
-            feature_list['DO Keywords'] += searchKeywordsInLine(line, r'^.*\b(do)\b.*$')
-            feature_list['Non-empty Lines'] += isNotEmptyLine
-            feature_list['Negation Operator'] += find_negation_operator(line)
-            feature_list['Tabulators'] += count_tabs(line)
-            feature_list['Words'] += countWords(line)
-            feature_list['Ternary Operations'] += ternary_operator(line)
-            feature_list['Spaces'] += spacesInLine(line)
-            feature_list['Commands'] += numberOfCommandsCurrentLine
-            feature_list['Functions'] += find_functions(line)
-            feature_list['Tab Indents'] += check_tab_indent(line)
-            feature_list['Space Indents'] += check_space_indent(line)
-            feature_list['Empty Lines'] += isEmptyLine(line)
+                feature_map['Custom Types'] = 1
+            feature_map['Chars'] += charsCurrentLine
+            feature_map['IF Keywords'] += searchKeywordsInLine(line, r'^.*\b(if)\b.*$')
+            feature_map['ELSE Keywords'] += searchKeywordsInLine(line, r'^.*\b(else)\b.*$')
+            feature_map['FOR Keywords'] += searchKeywordsInLine(line, r'^.*\b(for)\b.*$')
+            feature_map['WHILE Keywords'] += searchKeywordsInLine(line, r'^.*\b(while)\b.*$')
+            feature_map['SWITCH Keywords'] += searchKeywordsInLine(line, r'^.*\b(switch)\b.*$')
+            feature_map['DO Keywords'] += searchKeywordsInLine(line, r'^.*\b(do)\b.*$')
+            feature_map['Non-empty Lines'] += isNotEmptyLine
+            feature_map['Negation Operator'] += find_negation_operator(line)
+            feature_map['Tabulators'] += count_tabs(line)
+            feature_map['Words'] += countWords(line)
+            feature_map['Ternary Operations'] += ternary_operator(line)
+            feature_map['Spaces'] += spacesInLine(line)
+            feature_map['Commands'] += numberOfCommandsCurrentLine
+            feature_map['Functions'] += find_functions(line)
+            feature_map['Tab Indents'] += check_tab_indent(line)
+            feature_map['Space Indents'] += check_space_indent(line)
+            feature_map['Empty Lines'] += isEmptyLine(line)
 
             if isNotEmptyLine:
                 commands_per_non_empty_line.append(numberOfCommandsCurrentLine)
 
             max_nest_depth_in_line = calculate_nesting_depth(line)
-            if max_nest_depth_in_line > feature_list['Nesting Depth']:
-                    feature_list['Nesting Depth'] = max_nest_depth_in_line
+            if max_nest_depth_in_line > feature_map['Nesting Depth']:
+                    feature_map['Nesting Depth'] = max_nest_depth_in_line
 
             found_macro = find_macro(line)
             if False != found_macro and uses_macros == 0:
@@ -680,69 +680,69 @@ def extract_features(filepath, author, creation_order, csv_flag):
         """"""""""""""""""""" end of loop """""""""""""""""""""
 
         # file features ...
-        feature_list['All Keywords'] = feature_list['IF Keywords'] + feature_list['ELSE Keywords'] + feature_list['FOR Keywords'] + feature_list['SWITCH Keywords'] + feature_list['WHILE Keywords'] + feature_list['DO Keywords']
+        feature_map['All Keywords'] = feature_map['IF Keywords'] + feature_map['ELSE Keywords'] + feature_map['FOR Keywords'] + feature_map['SWITCH Keywords'] + feature_map['WHILE Keywords'] + feature_map['DO Keywords']
 
         if total_comments == 0:
             # if there are no comments at all...
-            feature_list['Comment Readability'] = 0
-            feature_list['Inline to All Comments'] = 0
-            feature_list['Multi-line to All Comments'] = 0
-            feature_list['Unindented Comments'] = 0
-            feature_list['One Line to All Comments'] = 0
+            feature_map['Comment Readability'] = 0
+            feature_map['Inline to All Comments'] = 0
+            feature_map['Multi-line to All Comments'] = 0
+            feature_map['Unindented Comments'] = 0
+            feature_map['One Line to All Comments'] = 0
         else:
-            feature_list['Comment Readability'] = count_readability(all_commented_words)
-            feature_list['Inline to All Comments'] = inline_comments / total_comments if inline_comments > 0 else 0
-            feature_list['Multi-line to All Comments'] = multiline_comments / total_comments if multiline_comments > 0 else 0
-            feature_list['Unindented Comments'] = unindented_comments / total_comments if unindented_comments > 0 else 0
-            feature_list['One Line to All Comments'] = oneline_comments / total_comments
+            feature_map['Comment Readability'] = count_readability(all_commented_words)
+            feature_map['Inline to All Comments'] = inline_comments / total_comments if inline_comments > 0 else 0
+            feature_map['Multi-line to All Comments'] = multiline_comments / total_comments if multiline_comments > 0 else 0
+            feature_map['Unindented Comments'] = unindented_comments / total_comments if unindented_comments > 0 else 0
+            feature_map['One Line to All Comments'] = oneline_comments / total_comments
 
 
-        feature_list['Comments'] = total_comments
-        feature_list['Average Line Length'] = sum_line_length / line_count
-        if feature_list['Non-empty Lines'] != 0:
-            feature_list['Space Indents'] /= feature_list['Non-empty Lines']
+        feature_map['Comments'] = total_comments
+        feature_map['Average Line Length'] = sum_line_length / line_count
+        if feature_map['Non-empty Lines'] != 0:
+            feature_map['Space Indents'] /= feature_map['Non-empty Lines']
         else:
-            feature_list['Space Indents'] = 0
+            feature_map['Space Indents'] = 0
 
         # line_lengths can be 0 if the file is empty
         if len(line_lengths) != 0:
-            feature_list['Line Length Deviation'] = sum([abs(i - feature_list['Average Line Length']) for i in line_lengths]) / len(line_lengths)
+            feature_map['Line Length Deviation'] = sum([abs(i - feature_map['Average Line Length']) for i in line_lengths]) / len(line_lengths)
         else:
-            feature_list['Line Length Deviation'] = 0
+            feature_map['Line Length Deviation'] = 0
 
         # character count can be 0 if the file is empty
-        if feature_list['Chars'] != 0:
-            feature_list['Whitespace to Character Ratio'] = (feature_list['Spaces'] + feature_list['Tabulators']) / feature_list['Chars']
+        if feature_map['Chars'] != 0:
+            feature_map['Whitespace to Character Ratio'] = (feature_map['Spaces'] + feature_map['Tabulators']) / feature_map['Chars']
         else:
-            feature_list['Whitespace to Character Ratio'] = 0
+            feature_map['Whitespace to Character Ratio'] = 0
 
         # command count can be 0 if the file is empty
-        if feature_list['Commands'] == 0:
-            feature_list['Average Commands per Line'] = 0
+        if feature_map['Commands'] == 0:
+            feature_map['Average Commands per Line'] = 0
         else:
-            feature_list['Average Commands per Line'] = feature_list['Commands'] / feature_list['Non-empty Lines']
+            feature_map['Average Commands per Line'] = feature_map['Commands'] / feature_map['Non-empty Lines']
 
-        feature_list['Preprocessor Directives'] = uses_macros
-        feature_list['Uses United Declarations'] = united_declaration
-        feature_list['Using STL Libraries'] = using_stl_libraries
-        feature_list['Empty Lines'] = feature_list['Empty Lines']/line_count if line_count > 0 else 0
-        feature_list['Non-empty Lines'] = 1 - feature_list['Empty Lines']
-        feature_list['Average Parameter Count'] = sum(function_parameter_count) / len(function_parameter_count) if function_parameter_count != [] else 0
-        feature_list['Parameter Count Deviation'] = sum([abs(i - feature_list['Average Parameter Count']) for i in function_parameter_count]) / len(function_parameter_count) if function_parameter_count != [] else 0
-        feature_list['Custom Type Name Readability'] = count_readability(file_to_list('type.txt'))
-        feature_list['Function Name Readability'] = check_readability(format_words(all_functions))
-        feature_list['Function Average Length'] = sum(all_function_rows) / len(all_function_rows) if all_function_rows != [] else 0
-        feature_list['Uses Range-Based For'] = uses_range_based_for
-        feature_list['Prefers Tabs over Spaces'] = 1 if feature_list['Tab Indents'] > feature_list['Space Indents'] else 0
-        feature_list['Ternary Operations'] = 1 if feature_list['Ternary Operations'] > 0 else 0
-        feature_list['Unique Words'] = len(remove_duplicates(words))
-        feature_list['Function Length Deviation'] = sum([abs(i - feature_list['Function Average Length']) for i in all_function_rows]) / len(all_function_rows) if all_function_rows != [] else 0
-        feature_list['Function Block Braces'] = decide_function_style(kandr_function, allman_function, otherwise_function)
-        feature_list['Variable Name Readability'] = count_readability(file_to_list('variable.txt'))
-        feature_list['Define Name Readability'] = count_readability(file_to_list('define.txt'))
+        feature_map['Preprocessor Directives'] = uses_macros
+        feature_map['Uses United Declarations'] = united_declaration
+        feature_map['Using STL Libraries'] = using_stl_libraries
+        feature_map['Empty Lines'] = feature_map['Empty Lines']/line_count if line_count > 0 else 0
+        feature_map['Non-empty Lines'] = 1 - feature_map['Empty Lines']
+        feature_map['Average Parameter Count'] = sum(function_parameter_count) / len(function_parameter_count) if function_parameter_count != [] else 0
+        feature_map['Parameter Count Deviation'] = sum([abs(i - feature_map['Average Parameter Count']) for i in function_parameter_count]) / len(function_parameter_count) if function_parameter_count != [] else 0
+        feature_map['Custom Type Name Readability'] = count_readability(file_to_list('type.txt'))
+        feature_map['Function Name Readability'] = check_readability(format_words(all_functions))
+        feature_map['Function Average Length'] = sum(all_function_rows) / len(all_function_rows) if all_function_rows != [] else 0
+        feature_map['Uses Range-Based For'] = uses_range_based_for
+        feature_map['Prefers Tabs over Spaces'] = 1 if feature_map['Tab Indents'] > feature_map['Space Indents'] else 0
+        feature_map['Ternary Operations'] = 1 if feature_map['Ternary Operations'] > 0 else 0
+        feature_map['Unique Words'] = len(remove_duplicates(words))
+        feature_map['Function Length Deviation'] = sum([abs(i - feature_map['Function Average Length']) for i in all_function_rows]) / len(all_function_rows) if all_function_rows != [] else 0
+        feature_map['Function Block Braces'] = decide_function_style(kandr_function, allman_function, otherwise_function)
+        feature_map['Variable Name Readability'] = count_readability(file_to_list('variable.txt'))
+        feature_map['Define Name Readability'] = count_readability(file_to_list('define.txt'))
 
     if csv_flag  == "YES_CSV":
-        dump(feature_list)
+        dump(feature_map)
 
 
 # walks through directories and initiates feature extracktion for each .cpp file
