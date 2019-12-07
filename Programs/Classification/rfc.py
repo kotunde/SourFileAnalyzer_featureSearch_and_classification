@@ -53,8 +53,8 @@ index_counter = 1
 #res_list = {'Classifier':"",'Fold 1':0,'Fold 2':0, 'Fold 3':0,'Fold 4':0,'Fold 5':0,'Fold 6':0,'Fold 7':0,'Fold 8':0,'Fold 9':0,'Fold 10':0, 'Avg': 0, 'Std':0 }
 #csv_columns = ['classifier','fold_1','fold_2','fold_3','fold_4','fold_5','fold_6','fold_7','fold_8','fold_9','fold_10','average_accuracy','std_accuracy']
 
-res_list = {'Number_of_Trees':0,'Accuracy':0}
-csv_columns = ['numberOfTrees','accuracy']
+res_list = {'Feature_set':0,'Accuracy':0}
+csv_columns = ['featureSet','accuracy']
 
 #print results
 print(str(num_folds)+'-fold cross-validation results: ')
@@ -66,11 +66,11 @@ print('Avearage[accuracy]: '+str(np.average( scores['test_accuracy'] )))
 print('Std[accuracy]: '+str(np.std( scores['test_accuracy'] )))
 
 #this will be the actual line in our csv file
-res_list['Number_of_Trees'] = '100'      
+res_list['Feature_set'] = 'Sapi_47'      
 res_list['Accuracy'] = np.average( scores['test_accuracy'] )
 
 df=pd.DataFrame(res_list,index=[index_counter])
 #for the first time, we need to initialize our csv with header
 df.to_csv(csv_file,mode = 'w', header = csv_columns, index = False)
-#the we append the rest of the data
+#then we append the rest of the data
 #df.to_csv(csv_file,mode = 'a', header = False, index = False)
