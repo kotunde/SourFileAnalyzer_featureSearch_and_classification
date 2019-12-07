@@ -20,7 +20,7 @@ all_functions = []
 function_parameter_count = []
 uses_range_based_for = 0
 words = []
-pathDir = 'C:\\Users\\Nyaw\\Documents\\SourceFileAnalyzer' # don't forget to point this to your source dir!
+pathDir = 'yourDirectory\\repo\\Sapi_Dataset\\Data' # don't forget to point this to your data dir!
 DIRSEPARATOR = '\\'
 
 # lists the searched features
@@ -105,7 +105,7 @@ def searchKeywordsInLine(line, regex):
 
 # tests if a line is empty
 def isEmptyLine(line):
-    if line.strip() == '\n':
+    if line.strip() == '\n' or line.strip() == '':
         return 1
     else:
         return 0
@@ -113,7 +113,7 @@ def isEmptyLine(line):
 
 # tests if a line is not empty
 def isNotEmpty(line):
-    if line.strip() == '':
+    if line.strip() == '\n' or line.strip() == '':
         return 0
     else:
         return 1
@@ -795,5 +795,5 @@ def main(path, opsys, make_csv):
 # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
 
 
-main("C:\\Users\\Nyaw\\Documents\\Jupyter\\Analyzer\\DataBence14", 'WINDOWS', 'YES_CSV')
+main("yourDirectory\\repo\\Sapi_Dataset\\Data", 'WINDOWS', 'YES_CSV')
 # main("/home/tunde/Linux/Documents/Projekt/Sajat_kodok/Analyzer_06_10/Data", 'LINUX', 'YES_CSV')
